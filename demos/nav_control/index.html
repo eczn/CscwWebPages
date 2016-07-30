@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<a href="#" id="第1个" class="navBtn active" position='1'>首页</a>
+	<a href="#" id="第2个" class="navBtn" position='2'>各组介绍</a>
+	<a href="#" id="第3个" class="navBtn" position='3'>工作项目</a>
+	<a href="#" id="第4个" class="navBtn" position='4'>联系我们</a>
+
+	<div class="container" id="第1个container">首页 1</div>
+	<div class="container" id="第2个container">各组介绍 2</div>
+	<div class="container" id="第3个container">工作项目 3</div>
+	<div class="container" id="第4个container">联系我们 4</div>
+
+	<style type="text/css">
+		.container{
+			position: absolute;
+			left: 100%;
+			width: 100px;
+			height: 100px;
+			background-color: #DDDDDD;
+		}
+		#第1个container {
+			left: 0%
+		}
+
+	</style>
+
+</body>
+
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="navControl.js"></script>
+
+<script type="text/javascript">
+	var myNav = new navInit(); 
+
+	$(document).ready(function(){
+		$(".navBtn").click(myNav.initActive); 
+	});
+</script>
+
+</html>
