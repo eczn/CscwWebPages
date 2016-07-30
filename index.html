@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Index</title>
+	<link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+	<div id="header">
+		<div id="logo">
+			<img src="images/logo.png" alt="logo" width="150px">
+		</div>
+		<div id="nav">
+			<ul>
+				<li><a href="#" id="home" class="navBtn active" position="1">首页</a></li>
+				<li><a href="#" id="introduced" class="navBtn" position="2">各组介绍</a></li>
+				<li><a href="#" id="project" class="navBtn" position="3">工作项目</a></li>
+				<li><a href="#" id="connect" class="navBtn" position="4">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="homeContainer">
+	123
+	</div>
+	<div id="introducedContainer">
+	4
+	</div>
+	<div id="projectContainer">
+		434345
+	</div>
+	<div id="connectContainer">
+		34343
+	</div>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/navControl.js"></script>
+	<script>
+		var myNav = new navInit();
+		$(document).ready(function(){
+			$(".navBtn").click(myNav.initActive);
+		});
+	</script>
+</body>
+</html>

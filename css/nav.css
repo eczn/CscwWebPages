@@ -1,0 +1,91 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	overflow-x: hidden;
+}
+#homeContainer{
+	position: absolute;
+	left: 0%;
+	width: 100%;
+	min-height: 500px;
+	/*以下是测试用 可以删除*/
+	background: red;
+}
+#introducedContainer{
+	position: absolute;
+	left: 100%;
+	width: 100%;
+	min-height: 600px;
+	/*以下是测试用 可以删除*/
+	background: #000;
+}
+#projectContainer{
+	position: absolute;
+	left: 100%;
+	width: 100%;
+	min-height: 700px;
+	/*以下是测试用 可以删除*/
+	background: blue;
+}
+#connectContainer{
+	position: absolute;
+	left: 100%;
+	width: 100%;
+	min-height: 800px;
+	/*以下是测试用 可以删除*/
+	background: #888;
+}
+#header{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	box-shadow: 0 0 5px #888;
+}
+#logo{
+	position: absolute;
+	top: 10px;
+	left: 40px;
+	width: 200px;
+	height: 100px;
+}
+#nav{
+	position: absolute;
+	top: 40px;
+	right: 100px;
+	height: 300px;
+	vertical-align: middle;
+	font-size: 25px;
+	font-family: "微软雅黑";
+}
+#nav ul{
+	color: #000;
+	list-style-type: none;
+}
+#nav li{
+	display: inline-block;
+	padding-left: 20px;
+
+}
+#nav a:link{
+	color: #000;
+	text-decoration: none;
+}
+#nav a:visited{
+	color: #000;
+}
+#nav a:hover{
+	padding-bottom: 5px;
+	border-bottom: solid 4px orange;
+}
+#nav a:active{
+	padding-bottom: 5px;
+	border-bottom: solid 4px orange;
+}
+.active{
+	padding-bottom: 5px;
+	border-bottom: solid 4px orange;
+}	
+
+
