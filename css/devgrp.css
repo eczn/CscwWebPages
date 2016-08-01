@@ -2,7 +2,7 @@
 .java{
     position: absolute;
     top: 50px;
-    left: 100px;
+    left: 100px; 
 }
 .html5{
     position: absolute;
@@ -29,8 +29,15 @@
     top: 280px;
     left: 840px;
 }
-img{
+div canvas:last-child{
+    position: absolute;
+    margin-top: -200px;
+    top: 200px; 
+}
+
+#introducedContainer img{
     position: absolute;
     margin: 35px 100px;
+    z-index: 100; 
 }
 
