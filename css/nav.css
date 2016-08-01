@@ -5,52 +5,37 @@
 body{
 	overflow-x: hidden;
 }
-.homeContainer{
+.homeContainer,.introducedContainer,.projectContainer,.connectContainer{
 	position: absolute;
-	left: 0%;
 	width: 100%;
-	/*以下是测试用 可以删除*/
-	background: red;
-	min-height: 500px;
+	min-height: 1200px;
+	top: 130px;
+	background: #313131;
+}
+.homeContainer{
+	left: 0%;
 }
 .introducedContainer{
-	position: absolute;
 	left: 100%;
-	width: 100%;
-	/*以下是测试用 可以删除*/
-	min-height: 600px;
-/*	background: #000;*/
 }
 .projectContainer{
-	position: absolute;
 	left: 100%;
-	width: 100%;
-	/*以下是测试用 可以删除*/
-	min-height: 1200px;
-	background: blue;
 }
 .connectContainer{
-	position: absolute;
 	left: 100%;
-	width: 100%;
-	/*以下是测试用 可以删除*/
-	min-height: 800px;
-	background: #888;
-}
-.homeContainer,.introducedContainer,.projectContainer,.connectContainer{
-	top: 130px;
 }
 .header{
 	position: absolute;
 	top: 0px;
 	width: 100%;
 	height: 130px;
-	background: rgba(255,255,255,0.2);
+	background: #313131;
 }
 .header-fixed{
 	position: fixed;
 	height: 100px;
-	z-index: 999;
+	z-index: 20;
+	background: #d2d2d2;
 	box-shadow: 0 0 5px #888;
 }
 .nav-fixed{
@@ -61,8 +46,12 @@ body{
 	left: 10%;
 	top: 10%;
 }
-.logo-fixed{
+img[alt="logo-black"]{
 	width: 160px;
+}
+img[alt^="logo"]{
+	position: absolute;
+	left: 0;
 }
 .nav{
 	position: absolute;
@@ -73,7 +62,6 @@ body{
 	font-family: "微软雅黑";
 }
 .nav ul{
-	color: #000;
 	list-style-type: none;
 }
 .nav li{
@@ -81,13 +69,16 @@ body{
 	padding-left: 20px;
 
 }
+#nav a{
+	color: #FFF;
+}
 .nav a:link{
-	color: #000;
+	color: #FFF;
 	text-decoration: none;
 }
-.nav a:visited{
-	color: #000;
-}
+/*.nav a:visited{
+	color: #FFF;
+}*/
 .nav a:hover{
 	padding-bottom: 5px;
 	border-bottom: solid 4px orange;
@@ -96,11 +87,25 @@ body{
 	padding-bottom: 5px;
 	border-bottom: solid 4px orange;
 }
+.fixed-font-style{
+	color: #000;
+}
 .active{
 	padding-bottom: 5px;
 	border-bottom: solid 4px orange;
 }	
-
+.left-bottom{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 3;
+}
+.right-bottom{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 3;
+}
 @media screen and (max-width: 1200px) {
 	.nav{
 		font-size: 20px;
@@ -114,10 +119,10 @@ body{
 	.header-fixed{
 		height: 80px;
 	}
-	.logo-fixed{
-		width: 135px!important;
+	img[alt="logo-black"]{
+		width: 100px;
 	}
-	img[alt^="logo"]{
+	img[alt="logo-white"]{
 		width: 150px;
 	}
 }
@@ -137,10 +142,10 @@ body{
 	.homeContainer,.introducedContainer,.projectContainer,.connectContainer{
 		top: 70px;
 	}
-	.logo-fixed{
-		width: 100px!important;
+	img[alt="logo-black"]{
+		width: 100px;
 	}
-	img[alt*="logo"]{
+	img[alt="logo-white"]{
 		width: 120px;
 	}
 }
