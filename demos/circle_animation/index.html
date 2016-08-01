@@ -15,9 +15,6 @@ $(document).ready(function(){
 	var temp = new pageAnimation('JPC');
 
 	$(document).click(function(e){
-
-		//-webkit-filter: blur(0px);
-
 		temp.circleS(e.pageX,e.pageY,'#FFB931',0,18,temp.sayK(e.pageX,e.pageY),6);
 		setTimeout(function(){
 			temp.circleS(e.pageX,e.pageY,'#FFFFFF',0,17,temp.sayK(e.pageX,e.pageY),6);
@@ -27,19 +24,17 @@ $(document).ready(function(){
 	});
 });
 
-function dd(i){
-
-	$("#JPC").css("-webkit-filter",'blur('+i+'px)');
-
-	i+=5;	
-	if (i>60){
-		return;
-	}
-	setTimeout(function(){
-		dd(i);
-	},50);
-
-}
+//-webkit-filter: blur(0px);
+// function dd(i){
+// 	$("#JPC").css("-webkit-filter",'blur('+i+'px)');
+// 	i+=5;	
+// 	if (i>60){
+// 		return;
+// 	}
+// 	setTimeout(function(){
+// 		dd(i);
+// 	},50);
+// }
 
 </script>
 </html>

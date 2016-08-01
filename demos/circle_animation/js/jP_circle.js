@@ -32,14 +32,7 @@ function pageAnimation(domCanvasId){
 				cY += temp * k; 
 			}
 			window.requestAnimationFrame(function(){
-				circleS(cX,
-						cY,
-						color,
-						i+v,
-						v,
-						k,
-						cV
-						);
+				circleS(cX,cY,color,i+v,v,k,cV);
 			}); 		
 		}
 	}
