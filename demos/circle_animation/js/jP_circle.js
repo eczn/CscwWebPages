@@ -11,16 +11,23 @@ function pageAnimation(domCanvasId){
 		return ((height/2 - cY) / (width/2 - cX));
 	}
 
+	function setFillStyle(style){
+		g.fillStyle = style;
+	}
+
+	function clearCanvas(){
+		g.clearRect(0,0,width,height);
+	}
+
 	function circleS(cX,cY,color,i,v,k,cV){
 		g.beginPath();
-
-//		g.fillStyle = 'rgba(255,255,255,0.5)';
-//		g.fillRect(0,0,width,height);
-
 		g.fillStyle = color;
 		g.lineWidth = 1;
+
+//		g.fillRect(cX - i/2 ,cY - i/2,cX + i/2,cY + i/2);
 		g.arc(cX,cY,  i  ,0,6.29,false);
 		g.fill(); //画实心圆
+
 		g.closePath();
 
 		if (i>(height+width)){
@@ -40,4 +47,6 @@ function pageAnimation(domCanvasId){
 	this.domCanvas = domCanvas;
 	this.circleS = circleS;
 	this.sayK = sayK;
+	this.setFillStyle = setFillStyle;
+	this.clearCanvas = clearCanvas;
 }
