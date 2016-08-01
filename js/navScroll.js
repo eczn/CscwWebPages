@@ -8,6 +8,7 @@ function scroll(){
 			$("#logo-white").addClass("hide");
 			$("#logo-black").removeClass("hide");
 			$("#nav a").css("color","#000");
+			$("#header").css("z-index",1000);
 		}
 		if(top < 95){
 			$("#header").removeClass("header-fixed");
