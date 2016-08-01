@@ -7,6 +7,7 @@
 </head>
 <body>
 	<canvas style="position: absolute;top: 0;left: 0;" id="JPC"></canvas>
+	<img src="image/test.jpg" alt="test">
 </body>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jP_circle.js"></script>
@@ -15,10 +16,18 @@ $(document).ready(function(){
 	var temp = new pageAnimation('JPC');
 
 	$(document).click(function(e){
+		// temp.setFillStyle('#FFB931');
 		temp.circleS(e.pageX,e.pageY,'#FFB931',0,18,temp.sayK(e.pageX,e.pageY),6);
 		setTimeout(function(){
-			temp.circleS(e.pageX,e.pageY,'#FFFFFF',0,17,temp.sayK(e.pageX,e.pageY),6);
+			// temp.setFillStyle('rgba(55,55,55,0)');
+			temp.circleS(e.pageX,e.pageY,'rgba(255,255,255,1)',0,17,temp.sayK(e.pageX,e.pageY),6);
 		},300);
+
+		setTimeout(function(){
+			// temp.setFillStyle('rgba(55,55,55,0)');
+			$("#JPC").fadeTo(800,0);
+
+		},600);
 
 		// dd(0);
 	});
