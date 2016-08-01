@@ -9,6 +9,8 @@ git checkout your-branch-name
   
 之后再合并分支...
 
-# 官网建设 master
+
+# 官网建设 this is master merged with devAnimate
+
 
 ....
