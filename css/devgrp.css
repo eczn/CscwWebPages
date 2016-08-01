@@ -1,0 +1,36 @@
+
+.java{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+.html5{
+    position: absolute;
+    top: 50px;
+    left: 470px;
+}
+.ios{
+    position: absolute;
+    top: 50px;
+    left: 840px;
+}
+.and{
+    position: absolute;
+    top: 280px;
+    left: 100px;
+}
+.php{
+    position: absolute;
+    top: 280px;
+    left: 470px;
+}
+.c{
+    position: absolute;
+    top: 280px;
+    left: 840px;
+}
+img{
+    position: absolute;
+    margin: 35px 100px;
+}
+
