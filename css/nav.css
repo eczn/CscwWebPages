@@ -19,7 +19,7 @@ body{
 	width: 100%;
 	min-height: 600px;
 	/*以下是测试用 可以删除*/
-	background: #000;
+	background-color: black;
 }
 #projectContainer{
 	position: absolute;
