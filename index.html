@@ -7,10 +7,10 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
 	<link rel="stylesheet" href="css/devgrp.css" />
+	<link rel="stylesheet" type="text/css" href="css/home.css">
 </head>
 <body>
 	<canvas id='JPC' style='position: absolute;z-index: 99;'></canvas>
-
 	<div id="memu"><!-- this is memu and its css style is written in nav.css -->
 		<!-- btn-target里面的内容对应下面的a标签里面的id（实现功能拓展） -->
 		<div class="memu-item" btn-target="home"><p>首页</p></div>
@@ -18,7 +18,7 @@
 		<div class="memu-item" btn-target="project"><p>工作项目</p></div>
 		<div class="memu-item" btn-target="connect"><p>联系我们</p></div>
 	</div>
-
+	<img src="images/top.png" class="topBtn" />
 	<img src="images/left-bottom.png" alt="left-bottom" class="left-bottom" width="28%">
 	<img src="images/right-bottom.png" alt="right-bottom" class="right-bottom" width="20%">
 	<div id="header" class="header">
@@ -38,7 +38,18 @@
 		</div>
 	</div>
 	<div id="homeContainer" class="homeContainer">
-	123
+		<div class="border"></div>
+			<div class="mainIntro">
+			<div>工作室大简</div>
+			<span>工作室</span>
+			<span class="blue">大简介工作室</span>
+		</div>
+		<div class="intromore">
+			<p>工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介</p>
+			<p>工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介</p>
+			<p>工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介</p>
+		</div>
+		<div class="yellow"></div>
 	</div>
 
 	<div id="introducedContainer" class="introducedContainer">
@@ -77,11 +88,10 @@
 		
 	</div>
 	<div id="connectContainer" class="connectContainer">
-	
+		<div class="phone"><b>电话：</b>13600000000</div>
+		<div class="address"><b>地址：</b>XXXXXXXXXX</div>
+		<div class="email"><b>邮箱：</b>xxxxxxx</div>	
 	</div>
-
-	
-	
 
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/navControl.js"></script>
@@ -130,6 +140,10 @@
 				$(this).fadeTo(200,0);
 			});
 
+			//top事件
+			$('.topBtn').click(function(){
+  				$('html,body').animate({scrollTop: '0px'}, 800);
+ 			});
 		});
 	</script>
 </body>
