@@ -1,0 +1,93 @@
+/*
+ *  页面时间轴由timeline.css和timeline.js强力驱动
+ *
+ *
+ *
+ *
+ */
+
+.timeline {
+	margin: 0 auto; 
+	width: 1000px;
+}
+
+.tree-line {
+	
+}
+
+.tree-leaf {
+	position: relative;
+	height: 150px; 
+	width: 350px;
+	/*border: 5px yellow solid;*/
+
+	/*margin: 30px 60px 30px 60px;*/
+}
+/*.tree-leaf:after {
+	content:"";
+	width: 60px;
+	height: 60px;
+	border: 5px white solid;
+	background-color: #000;
+}*/
+
+.tree-img {
+	position: absolute;
+	height: 120px;
+	width: 120px;
+	margin: 10px;
+	left: 0;
+}
+
+.tree-intro {
+	position: absolute;
+	right: 0; 
+	width: 175px;
+}
+
+.tree-title {
+	font-size: 25px;
+	color: white;
+}
+
+.tree-time {
+	font-size: 16px;
+	color: white;
+}
+
+.tree-grp {
+	position: absolute;
+
+	font-size: 16px;
+	color: white;
+}
+
+.tree-float {
+	height: 150px;
+	width: 350px;
+	margin: 30px 60px 30px 60px;
+}
+
+.tree-float:nth-child(even) {
+
+	border: 5px yellow solid;
+
+	float: left;
+
+	-moz-transform: translateY(50px); 
+	-webkit-transform: translateY(50px); 
+	-ms-transform: translateY(50px);
+	transform: translateY(50px);
+
+}
+
+.tree-float:nth-child(odd){
+	border: 5px white solid;
+	float: right;
+}
+
+.tree-line {
+	background-color: #FFF;
+	width: 5px;
+	height: 1000px;
+}
