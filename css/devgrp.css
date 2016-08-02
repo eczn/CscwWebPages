@@ -36,9 +36,9 @@
     z-index: 18;
 }
 div canvas:last-child{
-    position: absolute;
-    margin-top: -200px;
-    top: 200px; 
+    position:relative;
+    margin-left: -340px;
+    left: -4px;
 }
 
 #introducedContainer img{
