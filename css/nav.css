@@ -155,3 +155,49 @@ img[alt^="logo"]{
 		left: 15px;
 	}
 }
+
+
+/*********************  memu css **********************/
+.memu-btn {
+	right: 20px;
+	position: absolute;
+	background-color: #FFF;
+	cursor: pointer;
+}
+
+#memu {
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	position: fixed;
+	opacity: 0;
+	display: none;
+	/*background-color: #FFF;*/
+	cursor: pointer;
+}
+
+
+/*p:nth-child(odd)*/
+.memu-item {
+	height: 25%;
+}
+
+.memu-item:nth-child(odd){
+	background-color: rgba(0,0,0,.7);
+}
+.memu-item:nth-child(even){
+	background-color: rgba(0,0,0,.9);
+}
+.memu-item:hover {
+	background-color: rgba(128,128,128,.9);
+}
+
+.memu-item p {
+	font-size: 36px;
+	color: white;
+	font-family: "微软雅黑";
+	text-indent: 1em;
+}
+
