@@ -123,9 +123,18 @@
 			});
 
 			//top事件
+			
 			$('.topBtn').click(function(){
   				$('html,body').animate({scrollTop: '0px'}, 800);
  			});
+
+			$(window).scroll(function(){
+				$('.topBtn').css('display', 'block');
+				if($(window).scrollTop()==0){
+					$('.topBtn').css('display', 'none');
+				}
+			}); 	
+
 		});
 	</script>
 </body>

@@ -55,6 +55,6 @@ div canvas:last-child{
     top: 92%;
     left: 90%;
     width: 60px;
-    display: block;
+    display: none;
     z-index:10;
 }
