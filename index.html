@@ -5,21 +5,30 @@
 	<title>Index</title>
 	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
 	<link rel="stylesheet" href="css/devgrp.css" />
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 </head>
 <body>
 	<canvas id='JPC' style='position: absolute;z-index: 99;'></canvas>
-	
+	<div id="memu"><!-- this is memu and its css style is written in nav.css -->
+		<!-- btn-target里面的内容对应下面的a标签里面的id（实现功能拓展） -->
+		<div class="memu-item" btn-target="home"><p>首页</p></div>
+		<div class="memu-item" btn-target="introduced"><p>各组介绍</p></div>
+		<div class="memu-item" btn-target="project"><p>工作项目</p></div>
+		<div class="memu-item" btn-target="connect"><p>联系我们</p></div>
+	</div>
 	<img src="images/top.png" class="topBtn" />
 	<img src="images/left-bottom.png" alt="left-bottom" class="left-bottom" width="28%">
 	<img src="images/right-bottom.png" alt="right-bottom" class="right-bottom" width="20%">
 	<div id="header" class="header">
+		<div class="visible-phone memu-btn">MEMU</div>
+
 		<div id="logoContainer" class="logoContainer">
 			<img src="images/logo-white.png" alt="logo-white" width="220px" id="logo-white">
 			<img src="images/logo-black.png" alt="logo-black" width="220px" id="logo-black" class="hide">
 		</div>
-		<div id="nav" class="nav">
+		<div id="nav" class="nav hidden-phone">
 			<ul>
 				<li><a href="#" id="home" class="navBtn active" position="1">首页</a></li>
 				<li><a href="#" id="introduced" class="navBtn" position="2">各组介绍</a></li>
@@ -94,6 +103,14 @@
 		var myNav = new navInit();
 		$(document).ready(function(){		
 			$(".navBtn").click(myNav.initActive);
+			$(".visible-phone").click(myNav.mobileTouch);
+			$("#memu").click(myNav.mobileTouch);
+			$(".memu-item").click(function(){
+				var temp = $(this).attr("btn-target"); 
+				//alert(temp);
+				$("#"+temp).trigger("click");
+			});
+
 			scroll();
 
 			// 监听click事件
