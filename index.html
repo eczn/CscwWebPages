@@ -12,10 +12,11 @@
 	<canvas id='JPC' style='position: absolute;z-index: 99;'></canvas>
 
 	<div id="memu"><!-- this is memu and its css style is written in nav.css -->
-		<div class="memu-item"><p>首页</p></div>
-		<div class="memu-item"><p>各组介绍</p></div>
-		<div class="memu-item"><p>工作项目</p></div>
-		<div class="memu-item"><p>联系我们</p></div>
+		<!-- btn-target里面的内容对应下面的a标签里面的id（实现功能拓展） -->
+		<div class="memu-item" btn-target="home"><p>首页</p></div>
+		<div class="memu-item" btn-target="introduced"><p>各组介绍</p></div>
+		<div class="memu-item" btn-target="project"><p>工作项目</p></div>
+		<div class="memu-item" btn-target="connect"><p>联系我们</p></div>
 	</div>
 
 	<img src="images/left-bottom.png" alt="left-bottom" class="left-bottom" width="28%">
@@ -94,6 +95,11 @@
 			$(".navBtn").click(myNav.initActive);
 			$(".visible-phone").click(myNav.mobileTouch);
 			$("#memu").click(myNav.mobileTouch);
+			$(".memu-item").click(function(){
+				var temp = $(this).attr("btn-target"); 
+				//alert(temp);
+				$("#"+temp).trigger("click");
+			});
 
 			scroll();
 
