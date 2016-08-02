@@ -4,27 +4,33 @@
  *
  */
 
-.timeline {
-	margin: 0 auto; 
+.tree-container {
+	margin: 0 auto;
 	width: 1000px;
-}
-
-.tree-line {
+	position: relative;
+	/*height: 1000px;*/
 	
 }
 
 .tree-leaf {
-	position: relative;
-	height: 150px; 
-	width: 350px;
-	/*border: 5px yellow solid;*/
-
-	/*margin: 30px 60px 30px 60px;*/
+	width: 1000px;
+	height: 150px;
+	margin: 30px 60px 30px 60px;
 }
-/*.tree-leaf:after {
-	content:"";
-	width: 60px;
-	height: 60px;
-	border: 5px white solid;
-	background-color: #000;
-}*/
+
+.tree-leaf:nth-child(odd) .tree-item{
+	right: 0;
+}
+.tree-leaf:nth-child(even) .tree-item{
+/*	-moz-transform: translateY(-80px); 
+	-webkit-transform: translateY(-80px); 
+	-ms-transform: translateY(-80px);
+	transform: translateY(-80px);*/
+}
+
+.tree-item {
+	width: 400px;
+	height: 150px;
+	border: 5px solid #FFF;
+	position: absolute;
+}
