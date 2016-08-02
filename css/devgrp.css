@@ -2,32 +2,38 @@
 .java{
     position: absolute;
     top: 50px;
-    left: 100px; 
+    left: 100px;
+    z-index: 18; 
 }
 .html5{
     position: absolute;
     top: 50px;
     left: 470px;
+    z-index: 18;
 }
 .ios{
     position: absolute;
     top: 50px;
     left: 840px;
+    z-index: 18;
 }
 .and{
     position: absolute;
     top: 280px;
     left: 100px;
+    z-index: 18;
 }
 .php{
     position: absolute;
     top: 280px;
     left: 470px;
+    z-index: 18;
 }
 .c{
     position: absolute;
     top: 280px;
     left: 840px;
+    z-index: 18;
 }
 div canvas:last-child{
     position: absolute;
@@ -38,6 +44,17 @@ div canvas:last-child{
 #introducedContainer img{
     position: absolute;
     margin: 35px 100px;
-    z-index: 100; 
+    z-index: 19; 
+}
+.changecolor canvas{
+    box-shadow:6px 6px 10px 4px #131313;
 }
 
+.topBtn{
+    position: fixed;
+    top: 92%;
+    left: 90%;
+    width: 60px;
+    display: block;
+    z-index:21;
+}

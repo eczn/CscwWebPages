@@ -8,8 +8,8 @@
 	<link rel="stylesheet" href="css/devgrp.css" />
 </head>
 <body>
-<canvas id='JPC' style='position: absolute;z-index: 99;'></canvas>
-
+	<canvas id='JPC' style='position: absolute;z-index: 99;'></canvas>
+	<img src="images/top.png" class="topBtn" />
 	<img src="images/left-bottom.png" alt="left-bottom" class="left-bottom" width="28%">
 	<img src="images/right-bottom.png" alt="right-bottom" class="right-bottom" width="20%">
 	<div id="header" class="header">
@@ -69,9 +69,6 @@
 	
 	</div>
 
-	
-	
-
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/navControl.js"></script>
 	<script src="js/navScroll.js"></script>
@@ -111,6 +108,10 @@
 				$(this).fadeTo(200,0);
 			});
 
+			//top事件
+			$('.topBtn').click(function(){
+  				$('html,body').animate({scrollTop: '0px'}, 800);
+ 			});
 		});
 	</script>
 </body>
