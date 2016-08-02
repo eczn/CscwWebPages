@@ -8,14 +8,15 @@ body{
 }
 #wrap{
 	width: 100%;
+	height: 100%;
 }
 #viewWindow{
 	width: 100%;
-	min-height: 600px;
 }
 .homeContainer,.introducedContainer,.projectContainer,.connectContainer{
 	position: absolute;
 	width: 100%;
+	min-height: 700px;
 	top: 130px;
 }
 .homeContainer{
