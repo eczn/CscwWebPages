@@ -25,7 +25,6 @@ body{
 	left: 100%;
 }
 .header{
-	z-index: 100;
 	position: absolute;
 	top: 0px;
 	width: 100%;
@@ -35,7 +34,7 @@ body{
 .header-fixed{
 	position: fixed;
 	height: 100px;
-	z-index: 20;
+	z-index: 5;
 	background: #d2d2d2;
 	box-shadow: 0 0 5px #888;
 }

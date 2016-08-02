@@ -8,7 +8,6 @@ function scroll(){
 			$("#logo-white").addClass("hide");
 			$("#logo-black").removeClass("hide");
 			$("#nav a").css("color","#000");
-			$("#header").css("z-index",1000);
 		}
 		if(top < 95){
 			$("#header").removeClass("header-fixed");
@@ -16,6 +15,7 @@ function scroll(){
 			$("#logo-white").removeClass("hide");
 			$("#logo-black").addClass("hide");
 			$("#nav a").css("color","#FFF");
+			$("#header").css("z-index",5);
 		}
 		var height = $("#header").height();
 		// console.log(height);

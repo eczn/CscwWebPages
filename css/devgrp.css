@@ -3,37 +3,37 @@
     position: absolute;
     top: 50px;
     left: 100px;
-    z-index: 18; 
+    z-index: 3; 
 }
 .html5{
     position: absolute;
     top: 50px;
     left: 470px;
-    z-index: 18;
+    z-index: 3;
 }
 .ios{
     position: absolute;
     top: 50px;
     left: 840px;
-    z-index: 18;
+    z-index: 3;
 }
 .and{
     position: absolute;
     top: 280px;
     left: 100px;
-    z-index: 18;
+    z-index: 3;
 }
 .php{
     position: absolute;
     top: 280px;
     left: 470px;
-    z-index: 18;
+    z-index: 3;
 }
 .c{
     position: absolute;
     top: 280px;
     left: 840px;
-    z-index: 18;
+    z-index: 3;
 }
 div canvas:last-child{
     position: absolute;
@@ -44,7 +44,7 @@ div canvas:last-child{
 #introducedContainer img{
     position: absolute;
     margin: 35px 100px;
-    z-index: 19; 
+    z-index: 4; 
 }
 .changecolor canvas{
     box-shadow:6px 6px 10px 4px #131313;
