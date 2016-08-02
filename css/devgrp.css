@@ -36,11 +36,10 @@
     z-index: 3;
 }
 div canvas:last-child{
-    position: absolute;
-    margin-top: -200px;
-    top: 200px; 
+    position:relative;
+    margin-left: -340px;
+    left: -4px;
 }
-
 #introducedContainer img{
     position: absolute;
     margin: 35px 100px;
@@ -58,3 +57,4 @@ div canvas:last-child{
     display: none;
     z-index:10;
 }
+

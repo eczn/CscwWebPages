@@ -13,9 +13,3 @@ for( var i=2; i<links.length;i+=2){
     cxt.fillRect(0, 0, 340, 200);  
 }
 
-function topBtn(){
-    if(window.scrollTop()==0){
-        $('.topBtn').css('display', 'none');
-    }
-}
-topBtn();
