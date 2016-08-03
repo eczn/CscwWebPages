@@ -3,6 +3,9 @@
 	padding: 0;
 }
 body{
+	padding-left: 0!important;
+	padding-right: 0!important;
+	font-family: "微软雅黑"!important;
 	background: #313131!important;   /*网页背景颜色*/
 	overflow-x: hidden;
 }
@@ -53,9 +56,12 @@ body{
 	left: 10%;
 	top: 10%;
 }
+
 img[alt="logo-black"]{
+	visibility: hidden;
 	width: 160px;
 }
+
 img[alt^="logo"]{
 	position: absolute;
 	left: 0;
@@ -73,7 +79,7 @@ img[alt^="logo"]{
 }
 .nav li{
 	display: inline-block;
-	padding-left: 20px;
+	padding-left: 58px;
 
 }
 #nav a{
@@ -105,13 +111,13 @@ img[alt^="logo"]{
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	z-index: 3;
+	z-index: -100;
 }
 .right-bottom{
 	position: fixed;
 	bottom: 0;
 	right: 0;
-	z-index: 3;
+	z-index: -100;
 }
 @media screen and (max-width: 1200px) {
 	.nav{
@@ -138,7 +144,7 @@ img[alt^="logo"]{
 		font-size: 16px;
 	}
 	.nav li{
-		padding-left: 16px;
+		padding-left: 47px;
 	}
 	.header{
 		height: 70px;
@@ -160,6 +166,15 @@ img[alt^="logo"]{
 @media screen and (max-width:768px) {
 	.logoContainer{
 		left: 15px;
+	}
+	.header,.header-fixed{
+		background-color: #eef5f7;
+	}
+	#logo-white{
+		display: none!important;
+	}
+	#logo-black{
+		visibility: visible!important;
 	}
 }
 
