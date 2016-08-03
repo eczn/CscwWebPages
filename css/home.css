@@ -3,11 +3,7 @@
 	position: absolute;
 	left: 10%;
 	top: 80px;
-<<<<<<< HEAD
-	width: 950px;
-=======
-	width: 880px;
->>>>>>> zrw
+	width: 900px;
 	height: 450px;
 	border: solid 20px #ffb930;
 	-o-box-shadow: inset 9px 10px 10px #202020, 9px 10px 10px #202020;
@@ -20,19 +16,11 @@
 	z-index: 4;
 	position: absolute;
 	left: 16%;
-<<<<<<< HEAD
-	margin-top: 160px;
-	width: 1100px;
-	color: rgb(255,255,255);
-	font-family: 微软雅黑;
-	font-size: 110px;
-=======
 	margin-top: 180px;
 	width: 1100px;
 	color: rgb(255,255,255);
 	font-family: 微软雅黑;
 	font-size: 100px;
->>>>>>> zrw
 }
 
 .blue{
@@ -45,10 +33,6 @@
 	z-index: 4;
 	position: absolute;
 	left: 10%;
-<<<<<<< HEAD
-=======
-	/*bottom: 0px;*/
->>>>>>> zrw
 	margin-top: 600px;
 	color: rgb(68,95,135);
 	font-family: 微软雅黑;
@@ -83,9 +67,6 @@
 
 .email{
 	top: 600px;
-<<<<<<< HEAD
-}
-=======
 }
 
 @media screen and (max-width: 1600px){
@@ -192,4 +173,3 @@
 		font-size: 48px;
 	}
 }
->>>>>>> zrw
