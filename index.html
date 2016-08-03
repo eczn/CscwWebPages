@@ -139,7 +139,7 @@
 	<script type="text/javascript" src="js/jP_circle.js"></script>
 	<script>
 		var myNav = new navInit();
-		$(document).ready(function(){		
+		$(document).ready(function(){	
 			$(".navBtn").click(myNav.initActive);
 			$(".visible-phone").click(myNav.mobileTouch);
 			$("#memu").click(myNav.mobileTouch);
@@ -150,6 +150,11 @@
 			});
 
 			scroll();
+
+			// line.js init 
+			var pen = new penInit("canvas-line",80,150);
+			pen.render();
+
 
 			// 监听click事件
 			$(".changecolor").click(function(e){
