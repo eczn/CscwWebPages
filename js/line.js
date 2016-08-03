@@ -15,8 +15,6 @@ function penInit(className,width,height){
 		if (color == undefined){
 			color = "#7fedec"
 		}
-
-
 		for (i;i<canvas.length;i++){
 			if (domCanvas!=undefined){
 				g = domCanvas.getContext('2d')
@@ -25,6 +23,7 @@ function penInit(className,width,height){
 			}
 			
 			g.beginPath();
+			g.clearRect(0,0,width,height);
 			g.strokeStyle = color;
 			g.lineWidth = 3;
 			g.moveTo(width,30);
