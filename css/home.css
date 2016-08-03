@@ -29,11 +29,15 @@
 	color: rgb(127,205,236);
 }
 
+.blue2{
+	background-color: rgb(49,49,49);
+	color: rgb(127,205,236);
+}
+
 .intromore{
 	z-index: 4;
 	position: absolute;
 	left: 10%;
-	/*bottom: 0px;*/
 	margin-top: 600px;
 	color: rgb(68,95,135);
 	font-family: 微软雅黑;
@@ -172,5 +176,56 @@
 	.email{
 		top: 310px;
 		font-size: 48px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.border{
+		top: 70px;
+		left: 0;
+		width: 380px;
+		height: 355px;
+		border: solid 13px #ffb930;
+	}
+	.mainIntro{
+		left: 55px;
+		margin-top: 150px;
+		font-size: 55px;
+	}
+	.blue{
+		margin-left: -15px;
+	}
+	.blue2{
+		position: absolute;
+		left: 0;
+		margin-top: 73px;
+		color: rgb(255,255,255);
+	}
+	.intromore{
+		left: 55px;
+		width: 390px;
+		margin-top: 470px;
+		font-size: 18px;
+	}
+	.yellow{
+		display: none;
+	}
+	.phone{
+		top: 100px;
+		font-size: 45px;
+	}
+	.address{
+		top: 300px;
+		font-size: 45px;
+	}
+	.email{
+		top: 500px;
+		font-size: 45px;
+	}
+	span[class^="formobile"] {
+		position: absolute;
+		left: 10%;
+		margin-top: 70px;
+		min-width: 450px;
 	}
 }
