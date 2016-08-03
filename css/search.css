@@ -1,0 +1,19 @@
+.search{
+	/*定位得你重新整合定位，我这弄个大概定位的*/
+	z-index: 4;
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	width: 49%;
+	height: 500px;
+	font-family: 微软雅黑;
+	font-size: 24px;
+	color: #707070;
+	background-color: #7fcdec;
+}
+
+form{
+	margin-top: 50px;
+	margin-left: 40px;
+}
+
