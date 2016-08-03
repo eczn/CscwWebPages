@@ -37,7 +37,12 @@
     }
 }
 @media screen and (min-width: 1900px) {
-    .grp {
+    .grp{
         margin-top: 10%;
     }
+}
+@media screen and (min-width: 1400px){
+    .grp{
+        margin-top: 10%;
+    }   
 }
