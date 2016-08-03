@@ -1,60 +1,36 @@
-
-.java{
-    position: absolute;
-    top: 50px;
-    left: 100px;
-    z-index: 3; 
+.backgroundblue{
+    background-color: #71B1CA;
+    height: 200px;
+    cursor: pointer;
 }
-.html5{
-    position: absolute;
-    top: 50px;
-    left: 470px;
-    z-index: 3;
-}
-.ios{
-    position: absolute;
-    top: 50px;
-    left: 840px;
-    z-index: 3;
-}
-.and{
-    position: absolute;
-    top: 280px;
-    left: 100px;
-    z-index: 3;
-}
-.php{
-    position: absolute;
-    top: 280px;
-    left: 470px;
-    z-index: 3;
-}
-.c{
-    position: absolute;
-    top: 280px;
-    left: 840px;
-    z-index: 3;
-}
-div canvas:last-child{
-    position:relative;
-    margin-left: -340px;
-    left: -4px;
-}
-#introducedContainer img{
-    position: absolute;
-    margin: 35px 100px;
-    z-index: 4; 
-}
-.changecolor canvas{
-    box-shadow:6px 6px 10px 4px #131313;
-}
-
 .topBtn{
     position: fixed;
-    top: 92%;
+    top: 90%;
     left: 90%;
     width: 60px;
     display: none;
-    z-index:10;
+    cursor: pointer;
+    z-index: 100;
+}
+.backgroundorange{
+    background-color: #F9B530;
+    margin-bottom: 20px;
+}
+.grp{
+    margin: 40px 30px ;
+}
+.backgroundblue img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin:-140px -75px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 425px){
+    .topBtn{
+        width: 40px;
+        top: 92%;
+        left: 85%;
+        z-index: 100;
+    }
+}
