@@ -3,6 +3,8 @@
 	padding: 0;
 }
 body{
+	padding-left: 0!important;
+	padding-right: 0!important;
 	font-family: "微软雅黑"!important;
 	background: #313131!important;   /*网页背景颜色*/
 	overflow-x: hidden;
@@ -54,9 +56,12 @@ body{
 	left: 10%;
 	top: 10%;
 }
+
 img[alt="logo-black"]{
+	visibility: hidden;
 	width: 160px;
 }
+
 img[alt^="logo"]{
 	position: absolute;
 	left: 0;
@@ -161,6 +166,15 @@ img[alt^="logo"]{
 @media screen and (max-width:768px) {
 	.logoContainer{
 		left: 15px;
+	}
+	.header,.header-fixed{
+		background-color: #eef5f7;
+	}
+	#logo-white{
+		display: none!important;
+	}
+	#logo-black{
+		visibility: visible!important;
 	}
 }
 
