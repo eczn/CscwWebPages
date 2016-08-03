@@ -8,12 +8,24 @@ function penInit(className,width,height){
 		canvas[i].width = width; 
 		canvas[i].height = height; 
 	}
-	this.render = function(){
-		var i = 0; 
-		for (i=0;i<canvas.length;i++){
-			var g = canvas[i].getContext('2d');
+
+	this.render = function(color,domCanvas){
+		var i = 0,g; 
+
+		if (color == undefined){
+			color = "#7fedec"
+		}
+
+
+		for (i;i<canvas.length;i++){
+			if (domCanvas!=undefined){
+				g = domCanvas.getContext('2d')
+			} else {
+				g = canvas[i].getContext('2d');	
+			}
+			
 			g.beginPath();
-			g.strokeStyle = "#7fedec";
+			g.strokeStyle = color;
 			g.lineWidth = 3;
 			g.moveTo(width,30);
 			g.lineTo(width/2,30);
@@ -24,4 +36,21 @@ function penInit(className,width,height){
 
 		}
 	}
+}
+
+function timelineInit(){
+	var pen = new penInit("canvas-line",80,150);
+	pen.render();
+
+	$(".tree-item").mouseenter(function(){
+		$(this).find(".title").css("color","#ffb930");
+
+		console.log($(this).find('canvas'));
+		pen.render("#ffb930",($(this).find('canvas'))[0]);
+	});
+	$(".tree-item").mouseleave(function(){
+		$(this).find(".title").css("color","#7fedec");
+		pen.render("#7fedec",($(this).find('canvas'))[0]);
+	});
+	
 }

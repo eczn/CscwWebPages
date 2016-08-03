@@ -168,9 +168,11 @@
 
 			scroll();
 
+			$("#project").trigger("click");
+
 			// line.js init 
-			var pen = new penInit("canvas-line",80,150);
-			pen.render();
+			timelineInit();
+
 
 
 			// 监听click事件
