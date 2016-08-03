@@ -35,7 +35,7 @@
     left: 840px;
     z-index: 3;
 }
-div canvas:last-child{
+.changecolor canvas:last-child{
     position:relative;
     margin-left: -340px;
     left: -4px;
