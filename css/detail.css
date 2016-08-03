@@ -1,0 +1,225 @@
+#detail-wrap{
+	padding-top: 1%;
+	width: 100%;
+}
+#back{
+	margin-left: 11.25%;
+	width: 90px;
+	height: 50px;
+	font-size: 2.2em;
+	font-weight: bold;
+	color: white;
+	line-height: 1.7em;
+	text-align: center;
+	background-color: #7fcdec; /*蓝色*/
+}	
+#back:hover{
+	background-color: #ffb930;
+	cursor: pointer;
+}
+.left-body{
+	padding-left: 4.5%;
+	z-index: 4;
+}
+.right-body{
+	z-index: 4;
+	padding-right: 0;
+}
+.introduction{
+	min-height: 140px;
+	border: solid 7px #ffb930;  /*橙色*/
+}
+.content{
+	margin-top: 40px;
+}
+.member-introduction,.participate-project{
+	padding-left: 1px;
+}
+[class$="-intro"]{
+	padding-top: 10px;
+}
+.left-body h1{
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	margin: 0;
+	padding: 0;
+	color: #ffb930;
+}
+.introduction h1{
+	font-size: 5em;
+}
+.left-body p{
+	color: #FFF;
+}
+.introduction p{
+	font-size: 1.4em;
+	padding-top: 0.9em;
+}
+.member-name{
+	margin-top: -12%;
+	padding-left: 0;
+}
+.participate-project-name{
+	padding-left: 0;
+}
+.member-name p,.participate-project-name p{
+	display: inline-block;
+	padding: 0 10px 0 0;
+	font-size: 1.3em;
+}
+.participate-project{
+	margin-bottom: 20px;
+}
+/*----------------------right body------------------------*/
+.view-window{
+	padding-left: 0;
+	padding-right: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.all-content{
+	padding-left: 0;
+	padding-right: 0;
+}
+.canvas-content{
+	padding-left: 0;
+	padding-right: 0;
+}
+.year-content{
+	padding-left: 0;
+	padding-right: 0;
+}
+.year-number{
+	margin-bottom: 50px;
+	width: 120px;
+	height: 70px;
+	font-size: 3.6em;
+	color: white;
+	line-height: 1.4em;
+	text-align: center;
+	background-color: #7fcdec; /*蓝色*/ 
+}
+.year-number:hover{
+	background-color: #ffb930;
+	cursor: pointer;
+}
+.all-content{
+	width: 100%;
+}
+/*----------------滚动条样式---------------*/
+/*滚动条整体部分*/
+.view-window::-webkit-scrollbar{
+	width: 5px; 
+	background-color: #7fcdec;
+}
+/*滚动条两端的按钮*/
+.view-window::-webkit-scrollbar-button {
+	height: 0px;
+	background-color: #7fcdec;
+}
+/*外层轨道*/
+.view-window::-webkit-scrollbar-track{
+
+}
+/*滚动条内层轨道*/
+.view-window::-webkit-scrollbar-track-piece{
+
+}
+/*滚动条里可以拖动的那部分*/
+.view-window::-webkit-scrollbar-thumb{
+	width: 6px;
+	background-color: #ffb930;
+}
+/*-----------------------------------------------*/
+@media screen and (max-width: 1600px){
+	.member-name{
+		margin-top: -11%;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.member-name{
+		margin-top: -6%;
+	}
+	.introduction p {
+    	padding-top: 0.6em;
+	}
+	.participate-project{
+		margin-bottom: 18px;
+	}
+}
+@media screen and (max-width: 992px) {
+	.content{
+		padding-top: 20px;
+	}
+	.member-name{
+		margin-top: 0%;
+	}
+	.introduction p {
+    	padding-top: 0;
+	}
+	.participate-project h1{
+		font-size: 1.5em;
+	}
+	.participate-project{
+		margin-bottom: 18px;
+		padding-left: 0;
+	}
+}
+@media screen and (max-width:768px){
+	.left-body{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.right-body{
+		padding-left: 0;
+	}
+	.content{
+		margin-top: 10px;
+		padding-top: 20px;
+	}
+	.brief-introduction{
+		padding-left: 1px;
+	}
+	.introduction p{
+    	padding-top: 0;
+	}
+	.introduction h1{
+		font-size: 3em;
+	}
+	.introduction{
+		padding-left: 1px;
+	}
+	.member-name,.participate-project-name{
+		padding:0 1px;
+		margin-top: 2%;
+	}
+	.member-name p{
+		font-size: 1.2em;
+	}
+	.participate-project-name p{
+		font-size: 1em;
+		padding-left: 0; 
+	}
+	.participate-project h1{
+		font-size: 1.6em;
+	}
+	.participate-project{
+		margin-bottom: 20px;
+		padding-left: 0;
+	}
+/*--------------right body-----------------*/
+	.view-window{
+		height: 400px;
+	}
+	.year-number{
+		margin-bottom: 0;
+		width: 100%;
+		height: 90px;
+		font-size: 2em;
+		color: white;
+		line-height: 2.8em;
+		text-align: center;
+	}
+}
