@@ -12,10 +12,12 @@
     cursor: pointer;
     z-index: 100;
 }
+
 .backgroundorange{
     background-color: #F9B530;
     margin-bottom: 20px;
 }
+
 .grp{
     margin: 40px 30px ;
 }
