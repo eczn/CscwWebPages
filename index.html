@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+
 	<title>协同工作室</title>
 	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-	<link rel="stylesheet" href="css/devgrp.css" />
+	<link rel="stylesheet" href="css/devgrp.css">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<link rel="stylesheet" href="css/timeline.css">
-	<link rel="stylesheet" type="text/css" href="css/search.css">
 </head>
 <body>
+<div class="mainC" style="width: 100%;position: absolute;top: 0;left: 0;height: 100%;overflow-x: hidden;">
 	<canvas id='JPC' style='position: absolute;z-index: 99;'></canvas>
 	<div id="memu"><!-- this is memu and its css style is written in nav.css -->
 		<!-- btn-target里面的内容对应下面的a标签里面的id（实现功能拓展） -->
@@ -55,8 +57,8 @@
 	</div>
 
 	<div id="introducedContainer" class="introducedContainer">
-		<div class="six-group-container row grp" id="six-group-container">
-				<div class="col-lg-4 col-md-6" id="java">
+		<div class="six-group-container row grp">
+				<div class="col-lg-4 col-md-6 grpblock">
 					<div class="backgroundorange">
 						<div class="backgroundblue">
 							<img src="images/Java.png" height="130" width="130" />
@@ -113,7 +115,7 @@
 					<div class="word-intro">
 						<div class="title">>CscwPage</div>
 						<div class="time">2016-08-08</div>
-						<ul class="grp">
+						<ul>
 							<li>前端组</li>
 							<li>Java组</li>
 						</ul>
@@ -129,7 +131,7 @@
 					<div class="word-intro">
 						<div class="title">>CscwPage</div>
 						<div class="time">2016-08-08</div>
-						<ul class="grp">
+						<ul>
 							<li>前端组</li>
 							<li>Java组</li>
 						</ul>
@@ -151,20 +153,7 @@
 					<canvas class="canvas-line"></canvas>
 				</div>
 			</div>
-			<div class="search">
-				<form>
-					<span>参与组别</span> <input type="checkbox" name="choosefe">前端组 <input type="checkbox" name="chooseios">IOS组 <input type="checkbox" name="choosejava">JAVA组
-					<br/>
-					<input type="checkbox" name="chooseAndroid">
-					安卓组 <input type="checkbox" name="choosePHP">PHP组 <input type="checkbox" name="chooseC++">C++组
-					<br/>
-					<span>时间区间</span>
-					<br/>
-					<span>关节字</span> <textarea rows="10" cols="30" ></textarea>
-					<br/>
-					<input type="submit" value="搜索">
-				</form>
-			</div>	
+
 
 		</div>
 	</div>
@@ -172,9 +161,10 @@
 	<div id="connectContainer" class="connectContainer">
 		<div class="phone"><span><b>电话：</b></span><span class="formobile1">13600000000</span></div>
 		<div class="address"><span><b>地址：</b></span><span class="formobile2">XXXXXXXXXX</span></div>
-		<div class="email"><span><b>邮箱：</b></span><span class="formobile3">XXXXXXXXXXXXX</span></div>	
+		<div class="email"><span><b>邮箱：</b></span><span class="formobile3">XXXXXXXXXXXXX</span></div>
 	</div>
 
+</div>
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/navControl.js"></script>
 	<script src="js/navScroll.js"></script>
@@ -182,6 +172,7 @@
 	<script src="js/devgrp.js"></script>
 	<script type="text/javascript" src="js/line.js"></script>
 	<script type="text/javascript" src="js/jP_circle.js"></script>
+	<script type="text/javascript" src="js/homeconnect.js"></script>
 	<script>
 		$(document).ready(function(){
 			var myNav = new navInit();
@@ -193,27 +184,19 @@
 				//alert(temp);
 				$("#"+temp).trigger("click");
 			});
-
 			scroll();
-
 			// $("#project").trigger("click");
-
 			// line.js init 
 			timelineInit();
-
-
-
 			// 监听click事件
 			$(".changecolor").click(function(e){
 				// new a pencil to draw 
 				var temp = new pageAnimation('JPC');
-
 				$("#JPC").css("display","block").css("opacity","1");
 				temp.circleS(e.pageX,e.pageY,'#FFB931',0,18,temp.sayK(e.pageX,e.pageY),6);
 				setTimeout(function(){
 					temp.circleS(e.pageX,e.pageY,'rgba(255,255,255,1)',0,17,temp.sayK(e.pageX,e.pageY),6);
 				},300);
-
 				setTimeout(function(){
 					$("#JPC").fadeTo(800,0,function(){
 						temp.clearCanvas();
@@ -221,28 +204,23 @@
 					});
 				},600);
 			});
-
 			$(".grp").mouseleave(function(){
 				$(this).find(".backgroundblue").fadeTo(200,1);
 			});
-
 			$(".backgroundblue").mouseenter(function(){
 				$(this).fadeTo(200,0);
 			});
-
 			//top事件
 			
 			$('.topBtn').click(function(){
   				$('html,body').animate({scrollTop: '0px'}, 800);
  			});
-
 			$(window).scroll(function(){
 				$('.topBtn').css('display', 'block');
 				if($(window).scrollTop()==0){
 					$('.topBtn').css('display', 'none');
 				}
 			}); 	
-
 		});
 	</script>
 </body>
