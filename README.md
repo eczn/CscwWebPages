@@ -12,5 +12,8 @@ git checkout your-branch-name
 
 # 官网建设 
 
+# 第二阶段 
+差一些接口处理和动效。 
+小屏幕适配的问题 
 
 ....
