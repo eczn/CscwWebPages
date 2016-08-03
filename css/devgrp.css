@@ -40,7 +40,6 @@ div canvas:last-child{
     margin-left: -340px;
     left: -4px;
 }
-
 #introducedContainer img{
     position: absolute;
     margin: 35px 100px;
@@ -55,6 +54,7 @@ div canvas:last-child{
     top: 92%;
     left: 90%;
     width: 60px;
-    display: block;
+    display: none;
     z-index:10;
 }
+
