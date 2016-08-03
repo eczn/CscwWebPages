@@ -26,7 +26,7 @@
 .tree-leaf:nth-child(odd) .tree-item:before{
 	content: "";
 	position: absolute;
-	left: -76px;
+	left: -86.5px;
 	height: 180px;
 	border-left: 3px solid white;
 }
@@ -41,15 +41,25 @@
 .tree-leaf:nth-child(even) .tree-item:after{
 	content: "";
 	position: absolute;
-	right: -77px;
+	right: -86.5px;
 	height: 180px;
 	border-right: 3px solid white;
 }
 
 
 .tree-item {
-	width: 400px;
+	width: 390px;
 	height: 150px;
 	border: 5px solid #FFF;
 	position: absolute;
+}
+
+.canvas-line {
+	position: absolute!important;
+	right: -85px!important;
+	margin: 0 !important;
+}
+
+.tree-leaf:nth-child(odd) .canvas-line {
+	left: -85px!important;
 }
