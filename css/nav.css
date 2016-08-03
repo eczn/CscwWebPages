@@ -79,7 +79,7 @@ img[alt^="logo"]{
 }
 .nav li{
 	display: inline-block;
-	padding-left: 20px;
+	padding-left: 58px;
 
 }
 #nav a{
@@ -144,7 +144,7 @@ img[alt^="logo"]{
 		font-size: 16px;
 	}
 	.nav li{
-		padding-left: 16px;
+		padding-left: 47px;
 	}
 	.header{
 		height: 70px;
