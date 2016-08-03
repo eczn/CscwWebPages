@@ -3,7 +3,7 @@
 	position: absolute;
 	left: 10%;
 	top: 80px;
-	width: 950px;
+	width: 900px;
 	height: 450px;
 	border: solid 20px #ffb930;
 	-o-box-shadow: inset 9px 10px 10px #202020, 9px 10px 10px #202020;
@@ -16,11 +16,11 @@
 	z-index: 4;
 	position: absolute;
 	left: 16%;
-	margin-top: 160px;
+	margin-top: 180px;
 	width: 1100px;
 	color: rgb(255,255,255);
 	font-family: 微软雅黑;
-	font-size: 110px;
+	font-size: 100px;
 }
 
 .blue{
@@ -67,4 +67,109 @@
 
 .email{
 	top: 600px;
+}
+
+@media screen and (max-width: 1600px){
+	.border{
+		top: 30px;
+		width: 660px;
+		height: 320px;
+		border: solid 15px #ffb930;
+	}
+	.mainIntro{
+		margin-top: 95px;
+		font-size: 76px;
+	}
+	.blue{
+		margin-left: -20px;
+	}
+	.intromore{
+		margin-top: 380px;
+		font-size: 18px;
+	}
+	.yellow{
+		height:50px;
+	}
+	.phone{
+		top: 60px;
+		font-size: 63px;
+	}
+	.address{
+		top:220px;
+		font-size: 63px;
+	}
+	.email{
+		top: 380px;
+		font-size: 63px;
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.border{
+		top: 30px;
+		width: 550px;
+		height: 280px;
+		border: solid 12px #ffb930;
+	}
+	.mainIntro{
+		margin-top: 85px;
+		font-size: 65px;
+	}
+	.blue{
+		margin-left: -20px;
+	}
+	.intromore{
+		margin-top: 350px;
+		font-size: 15px;
+	}
+	.yellow{
+		height:40px;
+	}
+	.phone{
+		top: 60px;
+		font-size: 52px;
+	}
+	.address{
+		top:200px;
+		font-size: 52px;
+	}
+	.email{
+		top: 340px;
+		font-size: 52px;
+	}
+}
+
+@media screen and (max-width: 960px){
+	.border{
+		top: 30px;
+		width: 470px;
+		height: 235px;
+		border: solid 11px #ffb930;
+	}
+	.mainIntro{
+		margin-top: 78px;
+		font-size: 56px;
+	}
+	.blue{
+		margin-left: -15px;
+	}
+	.intromore{
+		margin-top: 300px;
+		font-size: 14px;
+	}
+	.yellow{
+		height:35px;
+	}
+	.phone{
+		top: 50px;
+		font-size: 48px;
+	}
+	.address{
+		top:180px;
+		font-size: 48px;
+	}
+	.email{
+		top: 310px;
+		font-size: 48px;
+	}
 }
