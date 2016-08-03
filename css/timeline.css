@@ -108,6 +108,10 @@
 		width: 420px;
 		position: relative;
 		/*height: 1000px;*/
+	    -moz-transform:scaleX(1);
+	    -webkit-transform:scaleX(1);
+	    -o-transform:scaleX(1);
+	    transform:scaleX(1);
 	}
 
 	.tree-item {
@@ -147,7 +151,5 @@
 	.tree-leaf:nth-child(even) .tree-item{
 		right: 0;
 	}
-
-
 
 }
