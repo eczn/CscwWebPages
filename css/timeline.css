@@ -58,8 +58,19 @@
 	position: absolute!important;
 	right: -85px!important;
 	margin: 0 !important;
+
+    -moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+
 }
 
 .tree-leaf:nth-child(odd) .canvas-line {
 	left: -85px!important;
+
+    -moz-transform:scaleX(1);
+    -webkit-transform:scaleX(1);
+    -o-transform:scaleX(1);
+    transform:scaleX(1);
 }
