@@ -13,11 +13,12 @@ function penInit(className,width,height){
 		for (i=0;i<canvas.length;i++){
 			var g = canvas[i].getContext('2d');
 			g.beginPath();
-			g.strokeStyle = "#FFF";
+			g.strokeStyle = "#7fedec";
 			g.lineWidth = 3;
 			g.moveTo(width,30);
 			g.lineTo(width/2,30);
 			g.lineTo(0,80);
+		
 			g.stroke();
 			g.closePath();
 

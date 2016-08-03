@@ -9,7 +9,6 @@
 	width: 1000px;
 	position: relative;
 	/*height: 1000px;*/
-	
 }
 
 .tree-leaf {
@@ -20,7 +19,7 @@
 
 .tree-leaf:nth-child(odd) .tree-item{
 	right: 0;
-	
+
 }
 
 .tree-leaf:nth-child(odd) .tree-item:before{
@@ -28,7 +27,7 @@
 	position: absolute;
 	left: -86.5px;
 	height: 180px;
-	border-left: 3px solid white;
+	border-left: 3px solid #7fedec;
 }
 
 
@@ -38,20 +37,24 @@
 	-ms-transform: translateY(-80px);
 	transform: translateY(-80px);*/
 }
+
 .tree-leaf:nth-child(even) .tree-item:after{
 	content: "";
 	position: absolute;
 	right: -86.5px;
 	height: 180px;
-	border-right: 3px solid white;
+	border-right: 3px solid #7fedec;
 }
 
 
 .tree-item {
 	width: 390px;
 	height: 150px;
-	border: 5px solid #FFF;
+	border: 5px solid #7fedec;
 	position: absolute;
+}
+.tree-item:hover {
+	border: 5px solid #ffb930;
 }
 
 .canvas-line {
@@ -73,4 +76,63 @@
     -webkit-transform:scaleX(1);
     -o-transform:scaleX(1);
     transform:scaleX(1);
+}
+
+
+.tree-item img {
+	position: absolute;
+	width: 120px;
+	
+	top: 10px;
+	left: 10px;
+}
+
+.tree-item > div {
+	position: absolute;
+	color: white;
+	left: 150px;
+}
+
+.word-intro .title {
+	font-size: 30px;
+	cursor: pointer;
+	color: #7fedec;
+}
+.word-intro .title:hover {
+	color: #ffb930;
+}
+
+@media screen and (max-width: 1000px) {
+	.canvas-line {
+		left: -85px!important;
+
+	    -moz-transform:scaleX(1);
+	    -webkit-transform:scaleX(1);
+	    -o-transform:scaleX(1);
+	    transform:scaleX(1);
+	}
+
+	.tree-leaf:nth-child(even) .tree-item:before{
+		content: "";
+		position: absolute;
+		left: -86.5px;
+		height: 180px;
+		border-left: 3px solid #7fedec;
+	}
+
+	.tree-leaf:nth-child(even) .tree-item:after{
+		content: "";
+		border-right: none;
+	}
+
+	.tree-leaf:nth-child(even) .tree-item{
+		right: 0;
+	}
+
+	.tree-container {
+		margin: 0 auto;
+		width: 470px;
+		position: relative;
+		/*height: 1000px;*/
+	}
 }
