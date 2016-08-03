@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-	<title>Index</title>
+	<title>协同工作室</title>
 	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
@@ -94,7 +94,15 @@
 				<div class="tree-item">
 					<canvas class="canvas-line"></canvas>
 					<!-- <img src="images/001.jpg" alt="" class="intro-img"> -->
-
+					<img src="images/001.jpg" alt="">
+					<div class="word-intro">
+						<div class="title">>CscwPage</div>
+						<div class="time">2016-08-08</div>
+						<ul class="grp">
+							<li>前端组</li>
+							<li>Java组</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 
@@ -102,6 +110,15 @@
 				<div class="line"></div>
 				<div class="tree-item">
 					<canvas class="canvas-line"></canvas>
+					<img src="images/001.jpg" alt="">
+					<div class="word-intro">
+						<div class="title">>CscwPage</div>
+						<div class="time">2016-08-08</div>
+						<ul class="grp">
+							<li>前端组</li>
+							<li>Java组</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="tree-leaf">
@@ -138,8 +155,8 @@
 	<script type="text/javascript" src="js/line.js"></script>
 	<script type="text/javascript" src="js/jP_circle.js"></script>
 	<script>
-		var myNav = new navInit();
-		$(document).ready(function(){	
+		$(document).ready(function(){
+			var myNav = new navInit();
 			$(".navBtn").click(myNav.initActive);
 			$(".visible-phone").click(myNav.mobileTouch);
 			$("#memu").click(myNav.mobileTouch);
