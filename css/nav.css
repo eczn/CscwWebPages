@@ -25,15 +25,19 @@ body,html{
 }
 .homeContainer{
 	left: 0%;
+	overflow-x: hidden;
 }
 .introducedContainer{
 	left: 100%;
+	overflow-x: hidden;
 }
 .projectContainer{
 	left: 100%;
+	overflow-x: hidden;
 }
 .connectContainer{
 	left: 100%;
+	overflow-x: hidden;
 }
 .header{
 	position: relative; /*之前是absolute*/
