@@ -1,5 +1,6 @@
 #detail-wrap{
-	padding-top: 1%;
+	position: absolute;
+	top:-200%;
 	width: 100%;
 }
 #back{
@@ -12,6 +13,7 @@
 	line-height: 1.7em;
 	text-align: center;
 	background-color: #7fcdec; /*蓝色*/
+	display: none;
 }	
 #back:hover{
 	background-color: #ffb930;
@@ -101,8 +103,11 @@
 	text-align: center;
 	background-color: #7fcdec; /*蓝色*/ 
 }
+.year-number[year="2016"]{
+	background-color: #ffb930; 
+}
 .year-number:hover{
-	background-color: #ffb930;
+	background-color: #ffb930; /*橙色*/
 	cursor: pointer;
 }
 .all-content{
@@ -132,7 +137,81 @@
 	width: 6px;
 	background-color: #ffb930;
 }
-/*-----------------------------------------------*/
+/*----------------------动画--------------------------*/
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+@keyframes fadeInDownFast {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+.fadeOutUp {
+	animation-name: fadeOutUp;
+	-webkit-animation-name: fadeOutUp;
+	-moz-animation-name: fadeOutUp;
+	-o-animation-name: fadeOutUp;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+
+}
+.fadeInDownFast{
+	animation-name: fadeInDownFast;
+	-webkit-animation-name: fadeInDownFast;
+	-moz-animation-name: fadeInDownFast;
+	-o-animation-name: fadeInDownFast;
+	-webkit-animation-duration: 0.7s;
+  	animation-duration: 0.7s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.fadeInDown{
+	animation-name: fadeInDown;
+	-webkit-animation-name: fadeInDown;
+	-moz-animation-name: fadeInDown;
+	-o-animation-name: fadeInDown;
+	-webkit-animation-duration: 1s;
+  	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+/*------------------------------------------------------*/
+@media screen and (min-width: 1300px){
+	.view-window{
+		min-height: 600px;
+	}
+}
 @media screen and (max-width: 1600px){
 	.member-name{
 		margin-top: -11%;
@@ -168,6 +247,9 @@
 	}
 }
 @media screen and (max-width:768px){
+	#detail-wrap{
+		margin-top: -12%;
+	}
 	.left-body{
 		padding-left: 0;
 		padding-right: 0;
@@ -211,7 +293,7 @@
 	}
 /*--------------right body-----------------*/
 	.view-window{
-		height: 400px;
+		min-height: 600px;
 	}
 	.year-number{
 		margin-bottom: 0;
