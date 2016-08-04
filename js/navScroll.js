@@ -1,6 +1,7 @@
 function scroll(){
-	$(window).scroll(function(){
+	$(window).scroll(function(e){
 		var top = $(window).scrollTop();
+
 		//当滚动条下拉95px后 导航栏变成fixed， 字体颜色logo颜色改变
 		if(top >= 95){
 			$("#header").addClass("header-fixed");
