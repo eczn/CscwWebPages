@@ -29,9 +29,9 @@ function navInit(){
 					});
 				});
 			} else {
-				$(".animate-back").css("top","0"); 
-				$(".animate-back-left").css("left","0");
-				$(".animate-back-right").css("right","0");
+				$(".animate-back").css("top","0").css("display","block"); 
+				$(".animate-back-left").css("left","0").css("display","block");;
+				$(".animate-back-right").css("right","0").css("display","block");;
 			}
 		},1000);
 
