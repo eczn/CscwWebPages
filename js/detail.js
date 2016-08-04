@@ -57,3 +57,4 @@ $(".year-number").bind("click",function(){
 	$(this).css("background-color","#ffb930");
 }) 
 $("[year='2016']").trigger("click");
+
