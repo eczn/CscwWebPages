@@ -6,7 +6,7 @@
 
 .tree-container {
 	margin: 0 auto;
-	width: 1000px;
+	width: 877px;
 	position: relative;
 	/*height: 1000px;*/
 }
@@ -14,7 +14,7 @@
 .tree-leaf {
 	width: 1000px;
 	height: 150px;
-	margin: 30px 60px -90px 60px;
+	/*margin: 30px 60px -90px 60px;*/
 }
 
 .tree-leaf:nth-child(odd) .tree-item{
@@ -25,7 +25,7 @@
 .tree-leaf:nth-child(odd) .tree-item:before{
 	content: "";
 	position: absolute;
-	left: -86.5px;
+	left: -55px;
 	height: 180px;
 	border-left: 3px solid #7fedec;
 }
@@ -41,7 +41,7 @@
 .tree-leaf:nth-child(even) .tree-item:after{
 	content: "";
 	position: absolute;
-	right: -86.5px;
+	right: -55px;
 	height: 180px;
 	border-right: 3px solid #7fedec;
 }
@@ -82,7 +82,6 @@
 .tree-item img {
 	position: absolute;
 	width: 120px;
-	
 	top: 10px;
 	left: 10px;
 }
@@ -102,7 +101,7 @@
 	color: #ffb930;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 425px) and (max-width: 1000px) {
 	.tree-container {
 		margin: 0 auto;
 		width: 420px;
@@ -134,7 +133,7 @@
 	.tree-leaf:nth-child(even) .tree-item:before{
 		content: "";
 		position: absolute;
-		left: -86.5px;
+		left: -55px;
 		height: 180px;
 		border-left: 3px solid #7fedec;
 	}
@@ -148,6 +147,120 @@
 		right: 0;
 	}
 
+}
+
+@media screen and (max-width: 425px) {
+	.tree-container {
+		margin: 0 auto;
+		width: 320px;
+		position: relative;
+		/*height: 1000px;*/
+	}
+
+	.canvas-line {
+		left: -85px!important;
+	    -moz-transform:scaleX(1);
+	    -webkit-transform:scaleX(1);
+	    -o-transform:scaleX(1);
+	    transform:scaleX(1);
+	}
+
+	.tree-leaf {
+		width: 320px;
+		height: 150px;
+		margin: 10px 0px 10px 0px;
+	}
+
+	.tree-leaf:nth-child(even) .tree-item:before{
+		content: "";
+		position: absolute;
+		left: -55px;
+		height: 180px;
+		border-left: 3px solid #7fedec;
+	}
+
+	.tree-leaf:nth-child(even) .tree-item:after{
+		content: "";
+		border-right: none;
+	}
+
+	.tree-leaf:nth-child(even) .tree-item{
+		right: 0;
+	}
+
+	.tree-item img {
+		position: absolute;
+		width: 80px;
+		top: 10px;
+		left: 10px;
+	}
+	.tree-item {
+		width: 240px;
+		height: 110px;
+		left: 60px;
+		border: 5px solid #7fedec;
+		position: absolute;
+	}
+	.word-intro .title {
+		font-size: 20px;
+	}
+
+	.tree-item > div {
+		position: absolute;
+		color: white;
+		left: 110px;
+	}
 
 
+}
+
+/*************   Animating Structure   **************/
+.animate-back{
+	position: absolute;
+	top: 0; 
+	/*left: 0; */
+	height: 100%;
+	width: 100%;
+	z-index: 9;
+	background-color: #fff;
+}
+
+.animate-back-left {
+	position: absolute;
+	left: 0; 
+	/*left: 0; */
+	height: 100%;
+	width: 50%;
+	background-color: #000;
+}
+
+.animate-back-right {
+	position: absolute;
+	right: 0; 
+	/*left: 0; */
+	height: 100%;
+	width: 50%;
+	background-color: #000;
+}
+/******************************************/
+
+@media screen and (max-width: 1000px) {
+	.animate-back-left {
+		position: absolute;
+		left: 0; 
+		/*left: 0; */
+		height: 100%;
+		width: 0%;
+		background-color: #000;
+	}
+
+	.animate-back-right {
+		position: absolute;
+		right: 0%;
+		/*left: 0; */
+		height: 100%;
+		width: 100%;
+		
+		background-color: #000;
+	}
 }

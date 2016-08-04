@@ -188,8 +188,13 @@ img[alt^="logo"]{
 .memu-btn {
 	right: 20px;
 	position: absolute;
-	background-color: #FFF;
+	/*background-color: #FFF;*/
 	cursor: pointer;
+}
+.memu-btn > img {
+	position: absolute;
+	top: 23px;
+	right: 0px;
 }
 
 #memu {

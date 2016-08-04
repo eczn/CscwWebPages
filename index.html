@@ -16,8 +16,7 @@
 	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
 </head>
 <body>
-
-	<canvas id='JPC' style='position: absolute;z-index: 99;' ></canvas>
+	<canvas id='JPC' style='position: absolute;z-index: 99;' width="1" height="1"></canvas>
 	<div id="memu"><!-- this is memu and its css style is written in nav.css -->
 		<!-- btn-target里面的内容对应下面的a标签里面的id（实现功能拓展） -->
 		<div class="memu-item" btn-target="home"><p>首页</p></div>
@@ -29,7 +28,7 @@
 	<img src="images/left-bottom.png" alt="left-bottom" class="left-bottom" width="28%">
 	<img src="images/right-bottom.png" alt="right-bottom" class="right-bottom" width="20%">
 	<div id="header" class="header">
-		<div class="visible-phone memu-btn">MEMU</div>
+		<div class="visible-phone memu-btn"><img height="24" src="images/memu.png" alt="memu-btn"></div>
 
 		<div id="logoContainer" class="logoContainer">
 			<img src="images/logo-white.png" alt="logo-white" width="220px" id="logo-white" class="hidden-xs">
@@ -398,6 +397,7 @@
 	<!-- eczn: building here -->
 	<div id="projectContainer" class="projectContainer">
 
+
 		<div class="search">
 			<form>
 				<div class="grpChooseBlock">
@@ -456,6 +456,9 @@
 			</form>
 		</div>
 
+		<div class="animate-back"></div>
+		<div class="animate-back-left" ></div>
+		<div class="animate-back-right"></div>
 
 		<div class="tree-container">
 			<div class="tree-leaf">
@@ -526,7 +529,8 @@
 	<script type="text/javascript" src="js/line.js"></script>
 	<script type="text/javascript" src="js/jP_circle.js"></script>
 	<script type="text/javascript" src="js/detail.js"></script>
-	<script type="text/javascript" src="js/homeconnect.js"></script>
+	<script type="text/javascript" src="js/homeconnect.js"></script>	
+	<script type="text/javascript" src="js/satellite.js"></script>
 	<script>
 	   $('.form_datetime').datetimepicker({
 	        //language:  'fr',
@@ -560,7 +564,6 @@
 			// line.js init 
 			timelineInit();
 
-
 			// 监听click事件
 			$(".grpblock").click(function(e){
 				// new a pencil to draw 
@@ -593,7 +596,7 @@
   				$('html,body').animate({scrollTop: '0px'}, 800);
  			});
 			$(window).scroll(function(){
-				$('.topBtn').css('display', 'block');
+					$('.topBtn').css('display', 'block');
 				if($(window).scrollTop()==0){
 					$('.topBtn').css('display', 'none');
 				}
