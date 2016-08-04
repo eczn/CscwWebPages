@@ -107,6 +107,10 @@
 
 	<!-- eczn: building here -->
 	<div id="projectContainer" class="projectContainer">
+		<div class="animate-back"></div>
+		<div class="animate-back-left" ></div>
+		<div class="animate-back-right"></div>
+
 		<div class="tree-container">
 			<div class="tree-leaf">
 				<div class="line"></div>
@@ -177,6 +181,9 @@
 	
 	<script type="text/javascript" src="js/satellite.js"></script>
 	<script>
+	function d(){
+		alert("d");
+	}
 		$(document).ready(function(){
 			var myNav = new navInit();
 			$(".navBtn").click(myNav.initActive);
@@ -190,7 +197,7 @@
 
 			scroll();
 
-			$("#project").trigger("click");
+			// $("#project").trigger("click");
 
 			// line.js init 
 			timelineInit();

@@ -213,3 +213,32 @@
 
 
 }
+
+/*************   Animating Structure   **************/
+.animate-back{
+	position: absolute;
+	top: 0; 
+	/*left: 0; */
+	height: 100%;
+	width: 100%;
+	z-index: 9;
+	background-color: #fff;
+}
+
+.animate-back-left {
+	position: absolute;
+	left: 0; 
+	/*left: 0; */
+	height: 100%;
+	width: 50%;
+	background-color: #000;
+}
+
+.animate-back-right {
+	position: absolute;
+	right: 0; 
+	/*left: 0; */
+	height: 100%;
+	width: 50%;
+	background-color: #000;
+}
