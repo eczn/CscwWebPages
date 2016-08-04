@@ -16,6 +16,10 @@
 	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
 </head>
 <body>
+	<link rel="stylesheet" type="text/css" href="css/search.css">
+</head>
+<body>
+
 	<canvas id='JPC' style='position: absolute;z-index: 99;' width="1" height="1"></canvas>
 	<div id="memu"><!-- this is memu and its css style is written in nav.css -->
 		<!-- btn-target里面的内容对应下面的a标签里面的id（实现功能拓展） -->
@@ -46,17 +50,19 @@
 
 <!-- <div class="mainC" style="width: 100%;position: absolute;top: 0;left: 0;height: 100%;z-index: -1;overflow-x: hidden;"> -->
 	<div id="homeContainer" class="homeContainer">
-		<div class="border"></div>
-		<div class="mainIntro">
-			<div>工作室大简</div>
-			<span>工作室</span>
-			<span class="blue">大简介工</span><span class="blue2">作室</span>	
-		</div>
-		<div class="intromore">
-			<p>工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介</p>
-			<p>工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介</p>
-			<p>工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介</p>
-		</div>
+		<!-- <div class="row"> -->
+			<div class="border"></div>
+			<div class="mainIntro">
+				<div>工作室大简</div>
+				<span>工作室</span>
+				<span class="blue">大简介工</span><span class="blue2">作室</span>	
+			</div>
+			<div class="intromore">
+				<p>工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介</p>
+				<p>工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介</p>
+				<p>工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介工作室小简介</p>
+			</div>
+		<!-- </div> -->
 		<div class="yellow"></div>
 	</div>
 
@@ -508,6 +514,23 @@
 					<canvas class="canvas-line"></canvas>
 				</div>
 			</div>	
+			</div>
+			<div class="search">
+				<form>
+					<span>参与组别</span> <input type="checkbox" name="choosefe">前端组 <input type="checkbox" name="chooseios">IOS组 <input type="checkbox" name="choosejava">JAVA组
+					<br/>
+					<input type="checkbox" name="chooseAndroid">
+					安卓组 <input type="checkbox" name="choosePHP">PHP组 <input type="checkbox" name="chooseC++">C++组
+					<br/>
+					<span>时间区间</span>
+					<br/>
+					<span>关节字</span> <textarea rows="10" cols="30" ></textarea>
+					<br/>
+					<input type="submit" value="搜索">
+				</form>
+			</div>	
+
+
 		</div>
 	</div>
 
@@ -560,6 +583,7 @@
 			// $("#project").trigger("click");
 
 			// $("#project").trigger("click");
+			$("#project").trigger("click");
 
 			// line.js init 
 			timelineInit();
