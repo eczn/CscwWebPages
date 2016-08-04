@@ -14,7 +14,7 @@
 </head>
 <body>
 <div class="mainC" style="width: 100%;position: absolute;top: 0;left: 0;height: 100%;overflow-x: hidden;">
-	<canvas id='JPC' style='position: absolute;z-index: 99;'></canvas>
+	<canvas id='JPC' style='position: absolute;z-index: 99;' width="1" height="1"></canvas>
 	<div id="memu"><!-- this is memu and its css style is written in nav.css -->
 		<!-- btn-target里面的内容对应下面的a标签里面的id（实现功能拓展） -->
 		<div class="memu-item" btn-target="home"><p>首页</p></div>
@@ -186,7 +186,7 @@
 
 			scroll();
 
-			// $("#project").trigger("click");
+			$("#project").trigger("click");
 
 			// line.js init 
 			timelineInit();
