@@ -10,14 +10,18 @@ function penInit(className,width,height){
 	}
 
 	this.render = function(color,domCanvas){
-		var i = 0,g; 
+		var i = 0,g,fillColor = "#7fedec",r=5; 
 
 		if (color == undefined){
 			color = "#7fedec"
 		}
+
 		for (i;i<canvas.length;i++){
 			if (domCanvas!=undefined){
 				g = domCanvas.getContext('2d')
+				fillColor = "rgba(255,185,48,0.5)";
+				r = 10; 
+				// alert("!!!");
 			} else {
 				g = canvas[i].getContext('2d');	
 			}
@@ -31,12 +35,20 @@ function penInit(className,width,height){
 			g.lineTo(32,80);
 			g.stroke();
 			g.closePath();
-			g.beginPath();
-			g.arc(32,80,5,0,6.29,false);
-			g.fillStyle = color;
-			g.fill();
-			g.closePath();
 
+			if (r == 10){
+				g.beginPath();
+				g.arc(32,80,r,0,6.29,false);
+				g.fillStyle = fillColor;
+				g.fill();
+				g.closePath();				
+			} else {
+				g.beginPath();
+				g.arc(32,80,5,0,6.29,false);
+				g.fillStyle = "#7fedec";
+				g.fill();
+				g.closePath();
+			}
 		}
 	}
 }
@@ -53,7 +65,7 @@ function timelineInit(){
 	});
 	$(".tree-item").mouseleave(function(){
 		$(this).find(".title").css("color","#7fedec");
-		pen.render("#7fedec",($(this).find('canvas'))[0]);
+		pen.render();
 	});
 	
 }
