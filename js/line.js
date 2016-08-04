@@ -29,8 +29,12 @@ function penInit(className,width,height){
 			g.moveTo(width,30);
 			g.lineTo(60,30);
 			g.lineTo(32,80);
-		
 			g.stroke();
+			g.closePath();
+			g.beginPath();
+			g.arc(32,80,5,0,6.29,false);
+			g.fillStyle = color;
+			g.fill();
 			g.closePath();
 
 		}
