@@ -1,5 +1,5 @@
 .backgroundblue{
-    background-color:rgba(133,177,202,1);
+    background-color:#7fcdec;
     height: 200px;
     cursor: pointer;
 }
@@ -53,4 +53,36 @@
     .grp{
         margin-top: 10%;
     }  
+}
+
+@media screen and (max-width: 375px){
+    .grpblock img{
+        width: 80px;
+        height: 80px;
+        margin-left: -40px;   
+    }
+    .grpblock{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: -12.5%;   
+    }
+    .backgroundorange{
+        box-shadow: none;
+    }
+    .backgroundblue{
+        height: 185px;
+    }
+    .six-group-container{
+        margin: 40px -3px;
+        z-index: 3;
+
+    }
+}
+
+@media screen and (max-width:425px) and (min-width: 376px){
+    .grpblock img{
+        width: 70px;
+        height: 70px;
+        margin-left: -30px;   
+    }
 }
