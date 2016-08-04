@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+
 	<title>协同工作室</title>
 	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-	<link rel="stylesheet" href="css/devgrp.css" />
+	<link rel="stylesheet" href="css/devgrp.css">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<link rel="stylesheet" href="css/timeline.css">
 </head>
 <body>
-	<canvas id='JPC' style='position: absolute;z-index: 99;'></canvas>
+
+	<canvas id='JPC' style='position: absolute;z-index: 99;' width="1" height="1"></canvas>
 	<div id="memu"><!-- this is memu and its css style is written in nav.css -->
 		<!-- btn-target里面的内容对应下面的a标签里面的id（实现功能拓展） -->
 		<div class="memu-item" btn-target="home"><p>首页</p></div>
@@ -38,6 +41,8 @@
 			</ul>
 		</div>
 	</div>
+
+<!-- <div class="mainC" style="width: 100%;position: absolute;top: 0;left: 0;height: 100%;z-index: -1;overflow-x: hidden;"> -->
 	<div id="homeContainer" class="homeContainer">
 		<div class="border"></div>
 			<div class="mainIntro">
@@ -118,7 +123,7 @@
 					<div class="word-intro">
 						<div class="title">>CscwPage</div>
 						<div class="time">2016-08-08</div>
-						<ul class="grp">
+						<ul>
 							<li>前端组</li>
 							<li>Java组</li>
 						</ul>
@@ -134,7 +139,7 @@
 					<div class="word-intro">
 						<div class="title">>CscwPage</div>
 						<div class="time">2016-08-08</div>
-						<ul class="grp">
+						<ul>
 							<li>前端组</li>
 							<li>Java组</li>
 						</ul>
@@ -165,6 +170,7 @@
 		<div class="email"><b>邮箱：</b>xxxxxxx</div>	
 	</div>
 
+<!-- </div> -->
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/navControl.js"></script>
 	<script src="js/navScroll.js"></script>
@@ -186,7 +192,7 @@
 
 			scroll();
 
-			// $("#project").trigger("click");
+			$("#project").trigger("click");
 
 			// line.js init 
 			timelineInit();
