@@ -21,13 +21,16 @@ function transform() {
 		}
 		// console.log($("#six-group-container>div").length);
 		$("."+this.id+"-intro"+  ",#"+this.id+"Content").removeClass("hidden");
-		$("#six-group-container").hide();
-		$("#detail-wrap").css({"top":"8%"});
-		$("#groupIntroduction,#content,.right-body").removeClass("fadeOutUp");
-		$("#back").show();
-		$("#groupIntroduction").addClass("fadeInDownFast");
-		$("#content").addClass("fadeInDown");
-		$(".right-body").addClass("fadeInDown");
+		setTimeout(function() {
+			$("#six-group-container").hide();
+			$("#detail-wrap").css({"top":"8%"});
+			$("#groupIntroduction,#content,.right-body").removeClass("fadeOutUp");
+			$("#back").show();
+			$("#groupIntroduction").addClass("fadeInDownFast");
+			$("#content").addClass("fadeInDown");
+			$(".right-body").addClass("fadeInDown");			
+		},700);
+
 	})
 	$("#back").bind("click",function(){
 		//***remove class**//
