@@ -76,6 +76,31 @@ function pageAnimation(domCanvasId){
 		}
 	}
 
+	function rectS(cX,cY,color,i,v,k,cV){
+		g.beginPath();
+		g.fillStyle = color;
+		g.lineWidth = 1;
+
+//		g.fillRect(cX - i/2 ,cY - i/2,cX + i/2,cY + i/2);
+		// g.arc(cX,cY,  i  ,0,6.29,false);
+		// g.fill(); //画实心圆
+
+		g.closePath();
+
+		if (i>(height+width) || $("#"+domCanvasId).css("display") == "none"){
+			return;
+		} else {
+			if ( Math.abs(cX-(width/2)) > 2.001 ){
+				var temp = cV * (width/2 -cX) / Math.abs(cX-width/2);
+				cX += temp;
+				cY += temp * k; 
+			}
+			window.requestAnimationFrame(function(){
+				circleS(cX,cY,color,i+v,v,k,cV);
+			}); 		
+		}
+	}
+
 	this.domCanvas = domCanvas;
 	this.circleS = circleS;
 	this.sayK = sayK;
