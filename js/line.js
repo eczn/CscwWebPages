@@ -27,8 +27,8 @@ function penInit(className,width,height){
 			g.strokeStyle = color;
 			g.lineWidth = 3;
 			g.moveTo(width,30);
-			g.lineTo(width/2,30);
-			g.lineTo(0,80);
+			g.lineTo(60,30);
+			g.lineTo(32,80);
 		
 			g.stroke();
 			g.closePath();
