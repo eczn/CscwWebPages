@@ -1,8 +1,9 @@
 .backgroundblue{
-    background-color: #71B1CA;
+    background-color:rgba(133,177,202,1);
     height: 200px;
     cursor: pointer;
 }
+
 .topBtn{
     position: fixed;
     top: 90%;
@@ -14,18 +15,23 @@
 }
 
 .backgroundorange{
-    background-color: #F9B530;
+    background-color: rgba(255,165,0,1);
     margin-bottom: 20px;
+    box-shadow: 5px 5px 10px 5px #151515;
 }
 
 .grp{
     margin: 40px 30px ;
 }
-.backgroundblue img{
+
+.grpblock img{
     position: relative;
+    z-index: 4;
     top: 50%;
     left: 50%;
-    margin:-140px -75px;
+    margin-top: -260px;
+    margin-left: -70px;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 320px) and (max-width: 425px){
@@ -36,13 +42,15 @@
         z-index: 100;
     }
 }
+
 @media screen and (min-width: 1900px) {
     .grp{
         margin-top: 10%;
     }
 }
+
 @media screen and (min-width: 1400px){
     .grp{
         margin-top: 10%;
-    }   
+    }  
 }
