@@ -1,5 +1,6 @@
 // line.js to draw line for timeline 
 // canvas line rendering 由line.js强力驱动
+"use strict"; 
 function penInit(className,width,height){
 	var canvas = $("."+className); 
 	var i; 
@@ -83,7 +84,7 @@ function searchInit(search){
 		} else {
 			widthSearchNeed = 300; 
 		}
-		return widthSearchNeed
+		return widthSearchNeed;
 	}
 
 	function click(){
