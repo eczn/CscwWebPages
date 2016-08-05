@@ -19,7 +19,6 @@
 
 .tree-leaf:nth-child(odd) .tree-item{
 	right: 0;
-
 }
 
 .tree-leaf:nth-child(odd) .tree-item:before{
@@ -52,6 +51,7 @@
 	height: 150px;
 	border: 5px solid #7fedec;
 	position: absolute;
+	z-index: 4;
 }
 .tree-item:hover {
 	border: 5px solid #ffb930;
@@ -222,7 +222,7 @@
 	height: 100%;
 	width: 100%;
 	z-index: 9;
-	background-color: #fff;
+	/*background-color: #313131;*/
 }
 
 .animate-back-left {
@@ -231,7 +231,8 @@
 	/*left: 0; */
 	height: 100%;
 	width: 50%;
-	background-color: #000;
+	/*background-color: #313131;*/
+	z-index: 8;
 }
 
 .animate-back-right {
@@ -240,8 +241,11 @@
 	/*left: 0; */
 	height: 100%;
 	width: 50%;
-	background-color: #000;
+	/*background-color: #313131;*/
+
+	z-index: 8;
 }
+
 /******************************************/
 
 @media screen and (max-width: 1000px) {
@@ -263,4 +267,39 @@
 		
 		background-color: #000;
 	}
+}
+
+.project-detail {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 460;
+	padding-top: 50px;
+	top: 0%;
+	left: 0;
+	opacity: 0;
+	display: none;
+	color: #ffb930;
+	background-color: #313131;
+/*
+	display: none; 
+	opacity: 0; 
+*/
+}
+
+.timelineBack {
+	/*margin-left: 11.25%;*/
+	width: 90px;
+	height: 50px;
+	font-size: 2.2em;
+	font-weight: bold;
+	color: white;
+	/*line-height: 1.7em;*/
+	text-align: center;
+	background-color: #ffb930; /*蓝色*/
+	cursor: pointer;
+	/*display: none;*/
+}
+.timelineBack:hover {
+	color: #313131;
 }

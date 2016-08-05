@@ -1,74 +1,261 @@
-.search{
-	z-index: 4;
+.search-shelter {
+	width: 630px; 
+	height: 1000px;
 	position: absolute;
-	left: 59%;
-	top: 5%;
-	width: 45.5%;
+	overflow: hidden;
+
+	left: 50%;
+	top: 100%;
+}
+
+.search {
+	/*z-index: 4;*/
+	position: absolute;
+	z-index: 5;
+
 	height: 515px;
+	width: 630px;
+	left: -630px;
 	font-family: 微软雅黑;
 	font-size: 20px;
-	color: #707070;
+	color: #313131;
 	background-color: #7fcdec;
-	margin-left: -85px;
+	/*display: none;*/
+	
+	
+	border-radius: 0 40px 40px 0;
+	-o-border-radius: 0 40px 40px 0;
+	-ms-border-radius: 0 40px 40px 0;
+	-moz-border-radius: 0 40px 40px 0;
+	-webkit-border-radius: 0 40px 40px 0;
+	
+	/*margin-left: -85px;*/
 }
 
-.grpChoose{
-	float: right;
+.search > h1 {
+	margin-left: 30px;
 }
-
 
 .grpChooseBlock{
-	float: left;
-	margin: 30px; 
+	margin: 10px 30px 10px 30px; 
 }
 
-.grpChooseBlock span{
-	margin-right: 10px;
-}
-
-.grpChoose input{
-	margin: 0px 15px 10px 10px;
-}
-.grpChoose{
-	margin-right: 90px;
-}
-.timeChooseBlock{
-	margin-top: 80px;
-	position: relative;
-}
-.grpTimeChoose{
-	float: right;
+.grpChooseBlock:before {
+	content: "参与组别";
 	display: inline;
-}
-.grpTimeChoose:after{
-	content: "—";
-	position:absolute;
-	top: 0px;
-	left: 300px;
-}
-.inputTime1,.inputTime2{
-	padding-bottom: -10px;
-	margin-left: 20px;
-}
-.timeKeyWords{
-	margin-top: 15px;
-	float: left;
-}
-.timeKeyWords input{
-	margin-top: -20px;
-	margin-left: 32px;
-}
-.searchBtn{
 	position: absolute;
-	top: 340px;
-	left: 140px; 
+	margin: 5px;
+}
+
+.grpChoose {
+	margin-left: 110px;
+	display: block;
+}
+
+.grpChoose > span {
+	display: inline-block;
+	width: 120px;
+	margin: 5px;
+}
+
+/*.timeChooseBlock:before{
+	content: "时间区间";
+}
+*/
+
+.timeChooseBlock{
+	margin: 10px 30px 10px 30px; 
+}
+
+
+.grpTimeChoose1, .grpTimeChoose2 {
+	display: inline-block;
+	height: 35px;
+	margin-right: 35px;
+}
+
+.timeChooseBlock:before {
+	content: "时间区间";
+	display: inline;
+	position: absolute;
+	margin: 5px;
+}
+
+.grpTimeChoose1 {
+	margin-left: 110px;
+}
+
+.inputTime1 , .inputTime2 {
+	width: 150px;
+	/*margin: 30px;*/
+}
+
+.timeKeyWords {
+	margin: 10px 30px 10px 30px;
+}
+
+.timeKeyWords > input {
+	margin-left: 110px;
+	width: 374px;
+}
+
+.timeKeyWords:before{
+	content: "关键字";
+	display: inline;
+	position: absolute;
+	margin: 5px;
+}
+
+.searchBtn{
 	font-size: 25px;
 	height: 35px;
 	width: 200px;
 	text-align: center;
 	background-color: #F6E2BB;
+	margin: 30px;
+	/*110+30*/
+	margin-left: 140px; 
 }
+
 .searchBtn:hover{
 	background-color: #FAEDD1;
 	cursor: pointer;
+}
+
+#search_circle {
+	width: 60px;
+	height: 60px;
+	position: relative;
+	margin: 0 auto;
+	top: 5px;
+	border-radius: 30px;
+	background-color: #7fedec; 
+	cursor: pointer;
+}
+
+#search_circle:hover {
+	background-color: #ffb930; 
+}
+
+#search_circle > img {
+	position: absolute;
+	height: 28px;
+	top: 16px;
+	left: 15px; 
+	
+	/*left: -15px;*/
+}
+
+#triggerBtn {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (min-width: 425px) and (max-width: 1000px) {
+	.search {
+		height: 600px;
+		width: 400px;
+	}
+
+	#search_circle {
+		width: 60px;
+		height: 60px;
+		position: relative;
+		margin: 0 0;
+		top: 35px;
+		left: -9px;
+		border-radius: 30px;
+		background-color: #7fedec; 
+		cursor: pointer;
+	}
+	.grpChoose {
+		margin-left: 20px;
+		display: block;
+	}
+	.grpChooseBlock:before {
+		display: block;
+		position: relative;
+	}
+	.timeKeyWords:before{
+		display: block;
+		position: relative;
+	}
+	.timeChooseBlock:before {
+		display: block;
+		position: relative;
+	}
+	.grpTimeChoose1,.grpTimeChoose2 {
+		margin: 10px 20px 10px 20px;
+	}
+
+	.timeKeyWords > input {
+		margin-left: 20px;
+		width: 300px;
+	}
+
+	.searchBtn {
+		margin-left: 50px; 
+	}
+}
+
+@media screen and (max-width: 425px) {
+	#search_circle {
+		width: 60px;
+		height: 60px;
+		position: relative;
+		margin: 0 0;
+		top: 15px;
+		left: -17px;
+		border-radius: 30px;
+		background-color: #7fedec; 
+		cursor: pointer;
+	}
+
+	.grpChoose > span {
+		display: inline-block;
+		width: 115px;
+		margin: 5px;
+	}
+	
+	.search {
+		height: 600px;
+		width: 320px;
+	}
+
+	.grpChoose {
+		margin-left: 0;
+		display: block;
+	}
+	.grpChooseBlock:before {
+		display: block;
+		position: relative;
+	}
+	.timeKeyWords:before{
+		display: block;
+		position: relative;
+	}
+	.timeChooseBlock:before {
+		display: block;
+		position: relative;
+	}
+	.grpTimeChoose1,.grpTimeChoose2 {
+		margin: 10px 0 10px 0;
+	}
+	.timeKeyWords > input {
+		margin-left: 0;
+		width: 200px;
+	}
+	
+	.searchBtn {
+		margin-left: 30px; 
+	}
+}
+
+@media screen and (min-width: 1000px){
+	.search {
+		width: 630px;
+	}
 }
