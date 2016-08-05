@@ -60,6 +60,15 @@ function navInit(){
 		$("#"+now_active_name+"Container").css("left",100*dx+"%").animate({
 			left: "0",
 		},1000);
+
+		if (preview_active_name=="home") {
+			$(".border,.mainIntro,.intromore").animate({"opacity":0,"margin-top":"+=70px"});
+			$(".yellow").animate({"opacity":"0"});
+		}
+
+		if (preview_active_name=="connect") {
+			$(".phone,.address,.email").animate({"opacity":"0"},600);
+		}
 	}
 	
 	this.mobileTouch = function(){
