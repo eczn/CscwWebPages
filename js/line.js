@@ -56,6 +56,7 @@ function penInit(className,width,height){
 
 function timelineInit(){
 	var pen = new penInit("canvas-line",80,150);
+	var detail_status = 0;
 	pen.render();
 
 	$(".tree-item").mouseenter(function(){
@@ -74,10 +75,25 @@ function timelineInit(){
 	// 	return false; 
 	// });
 
-	$(".tree-item").click(function(e){
-		var temp = new pageAnimation('JPC');
-		$("#JPC").css("display","block");
-		temp.rectAnimation(e.clientX-e.offsetX,e.clientY - e.offsetY ,390,150,2);
+	$(".tree-item,#project-detail-back").click(function(e){
+		if (detail_status == 0){
+			detail_status = 1; 
+			var temp = new pageAnimation('JPC');
+			$("#JPC").css("display","block");
+			temp.rectAnimation(e.clientX-e.offsetX,e.clientY - e.offsetY ,390,150,2);
+
+
+			$(".project-detail").css("display","none").fadeTo(600,1); 
+
+		} else if (detail_status == 1) {
+			detail_status = 0; 
+			$(".project-detail").fadeTo(600,0,function(){
+				$(this).css("display","none");
+			}); 
+		}
+		console.log(e.clientX);
+
+		
 		// $(this).animate({
 		// 	width : "100%",
 		// 	height: "100%",
