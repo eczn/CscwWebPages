@@ -3,11 +3,11 @@
 	position: absolute;
 	left: 50%;
 	top: 100%;
-	width: 0;
 	height: 515px;
+	width: 630px;
 	font-family: 微软雅黑;
 	font-size: 20px;
-	color: #707070;
+	color: #313131;
 	background-color: #7fcdec;
 
 	-webkit-filter: blur(0px);
@@ -136,7 +136,9 @@
 @media screen and (min-width: 425px) and (max-width: 1000px) {
 	.search {
 		height: 600px;
+		width: 400px;
 	}
+
 	#search_circle {
 		width: 60px;
 		height: 60px;
@@ -167,9 +169,14 @@
 	.grpTimeChoose1,.grpTimeChoose2 {
 		margin: 10px 20px 10px 20px;
 	}
+
 	.timeKeyWords > input {
 		margin-left: 20px;
 		width: 300px;
+	}
+
+	.searchBtn {
+		margin-left: 50px; 
 	}
 }
 
@@ -185,13 +192,49 @@
 		background-color: #7fedec; 
 		cursor: pointer;
 	}
-	
-	.grpChooseBlock {
-		margin: 20px;
+
+	.grpChoose > span {
+		display: inline-block;
+		width: 115px;
+		margin: 5px;
 	}
 	
+	.search {
+		height: 600px;
+		width: 320px;
+	}
+
 	.grpChoose {
-		float: none;
-		margin: 0;
+		margin-left: 0;
+		display: block;
+	}
+	.grpChooseBlock:before {
+		display: block;
+		position: relative;
+	}
+	.timeKeyWords:before{
+		display: block;
+		position: relative;
+	}
+	.timeChooseBlock:before {
+		display: block;
+		position: relative;
+	}
+	.grpTimeChoose1,.grpTimeChoose2 {
+		margin: 10px 0 10px 0;
+	}
+	.timeKeyWords > input {
+		margin-left: 0;
+		width: 200px;
+	}
+	
+	.searchBtn {
+		margin-left: 30px; 
+	}
+}
+
+@media screen and (min-width: 1000px){
+	.search {
+		width: 630px;
 	}
 }
