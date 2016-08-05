@@ -84,7 +84,7 @@ function searchInit(search){
 		} else if (temp > 425){
 			widthSearchNeed = 400; 
 		} else {
-			widthSearchNeed = 300; 
+			widthSearchNeed = 320; 
 		}
 		return widthSearchNeed;
 	}
@@ -97,6 +97,7 @@ function searchInit(search){
 		if (status == 0){
 			status = 1; 
 			$search.css("opacity","1");
+			$search.css("width","0");
 			$search.animate({
 				width: width_calced+'px'
 			},600,function(){
