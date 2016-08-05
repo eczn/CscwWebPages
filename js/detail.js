@@ -40,9 +40,11 @@ function transform() {
 		// ------------------------------------------//
 		$("#back").hide();
 		$("#groupIntroduction,#content,.right-body").addClass("fadeOutUp");
-		$("#six-group-container").fadeIn(700,function(){
+		setTimeout(function(){
+			$("#six-group-container").fadeIn(600,function(){
 			$("#detail-wrap").css({"top":"-200%"});	
-		});
+			});		
+		},500)
 	})
 	$(".navBtn").bind("click",function(){
 		setTimeout(function(){
@@ -60,4 +62,5 @@ $(".year-number").bind("click",function(){
 	$(this).css("background-color","#ffb930");
 }) 
 $("[year='2016']").trigger("click");
+console.log($(".year-number")[0]);
 
