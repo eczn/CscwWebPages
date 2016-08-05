@@ -25,7 +25,7 @@ function penInit(className,width,height){
 			} else {
 				g = canvas[i].getContext('2d');	
 			}
-			
+
 			g.beginPath();
 			g.clearRect(0,0,width,height);
 			g.strokeStyle = color;
@@ -67,15 +67,12 @@ function timelineInit(){
 		$(this).find(".title").css("color","#7fedec");
 		pen.render();
 	});
-	
 }
 
 function searchInit(search){
 	var status = 0; 
 	var $search = $(search); 
-
 	// $("#search_circle,img#search_circle").click(function(){
-
 	function refresh(){
 		var widthSearchNeed; 
 		var temp = window.innerWidth; 
@@ -86,7 +83,6 @@ function searchInit(search){
 		} else {
 			widthSearchNeed = 300; 
 		}
-
 		return widthSearchNeed
 	}
 
@@ -117,5 +113,4 @@ function searchInit(search){
 	this.refresh = refresh;
 	this.click = click;
 }
-
 
