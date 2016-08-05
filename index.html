@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
 </head>
 <body>
+<!-- <audio src="http://sc.111ttt.com/up/mp3/241318/FC627CE202A0EE3E36CD90F39BB6D14D.mp3" autoplay="autoplay">fuck the exploer which not support html5</audio> -->
 	<canvas id='JPC' style='position: absolute;z-index: 99;' width="1" height="1"></canvas>
 	<div id="memu"><!-- this is memu and its css style is written in nav.css -->
 		<!-- btn-target里面的内容对应下面的a标签里面的id（实现功能拓展） -->
@@ -398,69 +399,74 @@
 	<div id="projectContainer" class="projectContainer">
 
 
-		<div class="search">
-			<form>
-				<div class="grpChooseBlock">
-					<span>参与组别</span>
-					<div class="grpChoose">
-						<div>
-							<input type="checkbox" name="chooseFe" />前端组
-							<input type="checkbox" name="chooseIos" />iOS组
-							<input type="checkbox" name="chooseJava" />Java组
+		<div class="tree-container">
+			<div id="search_circle"><img src="images/search_circle.png" alt="click and search">
+
+				<div class="search">
+					<div class="grpChooseBlock">
+						<span>参与组别</span>
+						<div class="grpChoose">
+							<div>
+								<input type="checkbox" name="chooseFe" />前端组
+								<input type="checkbox" name="chooseIos" />iOS组
+								<input type="checkbox" name="chooseJava" />Java组
+							</div>
+							<div>
+								<input type="checkbox" name="chooseAndroid" />Android组
+								<input type="checkbox" name="choosePhp" />PHP组
+								<input type="checkbox" name="chooseC" />C++组
+							</div>	
 						</div>
-						<div>
-							<input type="checkbox" name="chooseAndroid" />Android组
-							<input type="checkbox" name="choosePhp" />PHP组
-							<input type="checkbox" name="chooseC" />C++组
-						</div>	
-					</div>
-					<div class="timeChooseBlock">
-						<span>时间区间</span>
-						<div class="grpTimeChoose">
-							<form class="form-horizontal">
-					            <fieldset>
-					                <div class="inputTime1">
-					                    <div class="controls input-append date form_datetime timeBlock"data-date-format="dd MM yyyy" data-link-field="dtp_input1">
-					                        <input size="16" type="text" value="" readonly>
-					                        <span class="add-on"><i class="icon-remove"></i></span>
-					                        <span class="add-on"><i class="icon-th"></i></span>
-					                    </div>
-					                    <input type="hidden" id="dtp_input1" value="" /><br/>
-					                </div>
-					            </fieldset>
-      					 	</form>
-						</div>
-						<div class="grpTimeChoose">
-							<form class="form-horizontal">
-						        <fieldset>
-						            <div class="inputTime2">
-						                <div class="controls input-append date form_datetime timeBlock"data-date-format="dd MM yyyy" data-link-field="dtp_input1">
-						                    <input size="16" type="text" value="" readonly>
-						                    <span class="add-on"><i class="icon-remove"></i></span>
-						                    <span class="add-on"><i class="icon-th"></i></span>
+						<div class="timeChooseBlock">
+							<span>时间区间</span>
+							<div class="grpTimeChoose">
+								<form class="form-horizontal">
+						            <fieldset>
+						                <div class="inputTime1">
+						                    <div class="controls input-append date form_datetime timeBlock"data-date-format="dd MM yyyy" data-link-field="dtp_input1">
+						                        <input size="16" type="text" value="" readonly>
+						                        <span class="add-on"><i class="icon-remove"></i></span>
+						                        <span class="add-on"><i class="icon-th"></i></span>
+						                    </div>
+						                    <input type="hidden" id="dtp_input1" value="" /><br/>
 						                </div>
-						                <input type="hidden" id="dtp_input1" value="" /><br/>
-						                </div>
-						        </fieldset>
-	      					 </form>
+						            </fieldset>
+		  					 	</form>
+							</div>
+							<div class="grpTimeChoose">
+								<form class="form-horizontal">
+							        <fieldset>
+							            <div class="inputTime2">
+							                <div class="controls input-append date form_datetime timeBlock"data-date-format="dd MM yyyy" data-link-field="dtp_input1">
+							                    <input size="16" type="text" value="" readonly>
+							                    <span class="add-on"><i class="icon-remove"></i></span>
+							                    <span class="add-on"><i class="icon-th"></i></span>
+							                </div>
+							                <input type="hidden" id="dtp_input1" value="" /><br/>
+							                </div>
+							        </fieldset>
+		      					 </form>
+							</div>
 						</div>
-					</div>
-					<div class="timeKeyWords">
-						<span>关键字</span>	
-						<input type="text" name="keyWords"/>
-					</div>
-					<div class="searchBtn">
-						<span>搜索</span>
+						<div class="timeKeyWords">
+							<span>关键字</span>	
+							<input type="text" name="keyWords"/>
+						</div>
+						<div class="searchBtn">
+							<span>搜索</span>
+						</div>
 					</div>
 				</div>
-			</form>
-		</div>
 
-		<div class="animate-back"></div>
-		<div class="animate-back-left" ></div>
-		<div class="animate-back-right"></div>
 
-		<div class="tree-container">
+
+
+
+
+
+
+			</div><div></div>
+
 			<div class="tree-leaf">
 				<div class="line"></div>
 				<div class="tree-item">
@@ -509,6 +515,11 @@
 				</div>
 			</div>	
 		</div>
+
+		<div class="animate-back"></div>
+		<div class="animate-back-left" ></div>
+		<div class="animate-back-right"></div>
+
 	</div>
 
 	<div id="connectContainer" class="connectContainer">
@@ -553,12 +564,17 @@
 				//alert(temp);
 				$("#"+temp).trigger("click");
 			});
+
 			// console.log(pageAnimation);
 			scroll();
-			// $("#project").trigger("click");
-			// $("#project").trigger("click");
+			
+			$("#project").trigger("click");
 			// line.js init 
 			timelineInit();
+			
+			var mySearch = new searchInit('.search'); 
+			$("#search_circle,img#search_circle").click(mySearch.click); 
+
 			// 监听click事件
 			$(".grpblock").click(function(e){
 				// new a pencil to draw 

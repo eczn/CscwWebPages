@@ -1,4 +1,3 @@
-
 function navInit(){
 	var memuStatus = 0; 
 	this.initActive = function(){

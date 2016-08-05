@@ -1,15 +1,17 @@
-.search{
+.search {
 	z-index: 4;
 	position: absolute;
-	left: 59%;
-	top: 5%;
-	width: 45.5%;
+	left: 50%;
+	top: 50%;
+	width: 0;
 	height: 515px;
 	font-family: 微软雅黑;
 	font-size: 20px;
 	color: #707070;
 	background-color: #7fcdec;
-	margin-left: -85px;
+
+	opacity: 0; /* for js (object searchInit) */
+	/*margin-left: -85px;*/
 }
 
 .grpChoose{
@@ -68,7 +70,46 @@
 	text-align: center;
 	background-color: #F6E2BB;
 }
+
 .searchBtn:hover{
 	background-color: #FAEDD1;
 	cursor: pointer;
+}
+
+#search_circle {
+	width: 60px;
+	height: 60px;
+	position: relative;
+	margin: 0 auto;
+	top: 5px;
+	border-radius: 30px;
+	background-color: #7fedec; 
+	cursor: pointer;
+}
+
+#search_circle:hover {
+	background-color: #ffb930; 
+}
+
+#search_circle > img {
+	position: absolute;
+	height: 28px;
+	top: 16px;
+	left: 15px; 
+	
+	/*left: -15px;*/
+}
+
+@media screen and (max-width: 1000px) {
+	#search_circle {
+		width: 60px;
+		height: 60px;
+		position: relative;
+		margin: 0 0;
+		top: 35px;
+		left: -9px;
+		border-radius: 30px;
+		background-color: #7fedec; 
+		cursor: pointer;
+	}
 }

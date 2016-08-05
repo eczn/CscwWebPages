@@ -69,3 +69,54 @@ function timelineInit(){
 	});
 	
 }
+
+function searchInit(search){
+	var status = 0; 
+	var $search = $(search); 
+
+	// $("#search_circle,img#search_circle").click(function(){
+
+	function refresh(){
+		var widthSearchNeed; 
+		var temp = window.innerWidth; 
+		if (temp > 768){
+			widthSearchNeed = 630; 
+		} else if (temp > 500){
+			widthSearchNeed = 440; 
+		} else {
+			widthSearchNeed = 300; 
+		}
+
+		return widthSearchNeed
+	}
+
+	function click(){
+		var width_calced = refresh();
+
+		if (status == 0){
+			status = 1; 
+			$search.css("opacity","1");
+			$search.animate({
+				width: width_calced+'px'
+			},600,function(){
+				$search.find("*").fadeTo(800,1);
+			});
+
+		} else if (status == 1) {
+			status = 0; 
+
+			$search.animate({
+				opacity: '0'
+			},600,function(){
+				$(this).css("width","0");
+			});
+
+
+		}
+	}
+
+	this.refresh = refresh;
+	this.click = click;
+}
+
+
