@@ -15,61 +15,75 @@
 	/*margin-left: -85px;*/
 }
 
-.grpChoose{
-	float: right;
-}
-
-
-.grpChooseBlock{
-	float: left;
+.grpChooseBlock , .timeChooseBlock{
 	margin: 30px; 
 }
 
-.grpChooseBlock span{
-	margin-right: 10px;
-}
-
-.grpChoose input{
+/*.grpChoose input{
 	margin: 0px 15px 10px 10px;
-}
+}*/
 .grpChoose{
 	margin-right: 90px;
+
 }
-.timeChooseBlock{
+.grpChoose > span {
+	display: inline-block;
+	width: 120px;
+	margin: 5px;
+}
+
+/*.timeChooseBlock{
 	margin-top: 80px;
 	position: relative;
+}*/
+
+/*.timeChooseBlock:before {
+	content: "时间区间";
+	display: block;
+	margin-bottom: 5px; 
 }
+
 .grpTimeChoose{
-	float: right;
+	float: left;
 	display: inline;
 }
-.grpTimeChoose:after{
+
+.inputTime2:before{
 	content: "—";
 	position:absolute;
 	top: 0px;
 	left: 300px;
 }
+
 .inputTime1,.inputTime2{
 	padding-bottom: -10px;
 	margin-left: 20px;
+}*/
+
+.timeChooseBlock:before{
+	content: "时间区间";
 }
-.timeKeyWords{
-	margin-top: 15px;
-	float: left;
+.grpTimeChoose {
+	display: inline-block;
 }
-.timeKeyWords input{
-	margin-top: -20px;
-	margin-left: 32px;
+.inputTime1 , .inputTime2 {
+	width: 150px;
+	margin: 30px;
 }
+
+
+.timeKeyWords {
+	position: relative;
+	margin: 30px;
+}
+
 .searchBtn{
-	position: absolute;
-	top: 340px;
-	left: 140px; 
 	font-size: 25px;
 	height: 35px;
 	width: 200px;
 	text-align: center;
 	background-color: #F6E2BB;
+	margin: 30px;
 }
 
 .searchBtn:hover{
@@ -109,7 +123,7 @@
 	height: 100%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 425px) and (max-width: 1000px) {
 	#search_circle {
 		width: 60px;
 		height: 60px;
@@ -120,5 +134,28 @@
 		border-radius: 30px;
 		background-color: #7fedec; 
 		cursor: pointer;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	#search_circle {
+		width: 60px;
+		height: 60px;
+		position: relative;
+		margin: 0 0;
+		top: 15px;
+		left: -17px;
+		border-radius: 30px;
+		background-color: #7fedec; 
+		cursor: pointer;
+	}
+	
+	.grpChooseBlock {
+		margin: 20px;
+	}
+	
+	.grpChoose {
+		float: none;
+		margin: 0;
 	}
 }

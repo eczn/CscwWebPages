@@ -71,9 +71,11 @@ function timelineInit(){
 }
 
 function searchInit(search){
+	// 私有变量
 	var status = 0; 
 	var $search = $(search); 
-	// $("#search_circle,img#search_circle").click(function(){
+	
+	// 获取期望的width宽度 
 	function refresh(){
 		var widthSearchNeed; 
 		var temp = window.innerWidth; 
@@ -87,6 +89,7 @@ function searchInit(search){
 		return widthSearchNeed;
 	}
 
+	// 被电击的时候的函数
 	function click(){
 		var width_calced = refresh();
 
