@@ -403,7 +403,11 @@
 
 		<div class="tree-container">
 			<div id="search_circle"><img src="images/search_circle.png" alt="click and search">
+				<!-- 占位用的triggerBtn -->
+				<div id="triggerBtn"></div>
+
 				<div class="search">
+
 					<div class="grpChooseBlock">
 						<span>参与组别</span>
 						<div class="grpChoose">
@@ -421,32 +425,28 @@
 						<div class="timeChooseBlock">
 							<span>时间区间</span>
 							<div class="grpTimeChoose">
-								<form class="form-horizontal">
-						            <fieldset>
-						                <div class="inputTime1">
-						                    <div class="controls input-append date form_datetime timeBlock"data-date-format="dd MM yyyy" data-link-field="dtp_input1">
-						                        <input size="16" type="text" value="" readonly>
-						                        <span class="add-on"><i class="icon-remove"></i></span>
-						                        <span class="add-on"><i class="icon-th"></i></span>
-						                    </div>
-						                    <input type="hidden" id="dtp_input1" value="" /><br/>
-						                </div>
-						            </fieldset>
-		  					 	</form>
+					            <fieldset>
+					                <div class="inputTime1">
+					                    <div class="controls input-append date form_datetime timeBlock"data-date-format="dd MM yyyy" data-link-field="dtp_input1">
+					                        <input size="16" type="text" value="" readonly>
+					                        <span class="add-on"><i class="icon-remove"></i></span>
+					                        <span class="add-on"><i class="icon-th"></i></span>
+					                    </div>
+					                    <input type="hidden" id="dtp_input1" value="" /><br/>
+					                </div>
+					            </fieldset>
 							</div>
 							<div class="grpTimeChoose">
-								<form class="form-horizontal">
-							        <fieldset>
-							            <div class="inputTime2">
-							                <div class="controls input-append date form_datetime timeBlock"data-date-format="dd MM yyyy" data-link-field="dtp_input1">
-							                    <input size="16" type="text" value="" readonly>
-							                    <span class="add-on"><i class="icon-remove"></i></span>
-							                    <span class="add-on"><i class="icon-th"></i></span>
-							                </div>
-							                <input type="hidden" id="dtp_input1" value="" /><br/>
-							                </div>
-							        </fieldset>
-		      					 </form>
+						        <fieldset>
+						            <div class="inputTime2">
+						                <div class="controls input-append date form_datetime timeBlock"data-date-format="dd MM yyyy" data-link-field="dtp_input1">
+						                    <input size="16" type="text" value="" readonly>
+						                    <span class="add-on"><i class="icon-remove"></i></span>
+						                    <span class="add-on"><i class="icon-th"></i></span>
+						                </div>
+						                <input type="hidden" id="dtp_input1" value="" /><br/>
+						                </div>
+						        </fieldset>
 							</div>
 						</div>
 						<div class="timeKeyWords">
@@ -561,7 +561,11 @@
 			timelineInit();
 			
 			var mySearch = new searchInit('.search'); 
-			$("#search_circle,img#search_circle").click(mySearch.click); 
+			$("#triggerBtn").click(mySearch.click); 
+			$(".search").click(function(){
+				// alert($(this)[0].className);
+			})
+			
 
 			// 监听click事件
 			$(".grpblock").click(function(e){

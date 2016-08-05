@@ -52,6 +52,7 @@
 	height: 150px;
 	border: 5px solid #7fedec;
 	position: absolute;
+	z-index: -1;
 }
 .tree-item:hover {
 	border: 5px solid #ffb930;
@@ -222,7 +223,7 @@
 	height: 100%;
 	width: 100%;
 	z-index: 9;
-	background-color: #fff;
+	/*background-color: #313131;*/
 }
 
 .animate-back-left {
@@ -231,7 +232,8 @@
 	/*left: 0; */
 	height: 100%;
 	width: 50%;
-	background-color: #000;
+	/*background-color: #313131;*/
+	z-index: 8;
 }
 
 .animate-back-right {
@@ -240,8 +242,11 @@
 	/*left: 0; */
 	height: 100%;
 	width: 50%;
-	background-color: #000;
+	/*background-color: #313131;*/
+
+	z-index: 8;
 }
+
 /******************************************/
 
 @media screen and (max-width: 1000px) {
