@@ -81,8 +81,8 @@ function searchInit(search){
 		var temp = window.innerWidth; 
 		if (temp > 768){
 			widthSearchNeed = 630; 
-		} else if (temp > 500){
-			widthSearchNeed = 440; 
+		} else if (temp > 425){
+			widthSearchNeed = 400; 
 		} else {
 			widthSearchNeed = 300; 
 		}
@@ -92,7 +92,8 @@ function searchInit(search){
 	// 被电击的时候的函数
 	function click(){
 		var width_calced = refresh();
-
+		// var width_calced = $search.css("width"); 
+		// alert($search.css("width"));
 		if (status == 0){
 			status = 1; 
 			$search.css("opacity","1");
