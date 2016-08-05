@@ -15,66 +15,73 @@
 	/*margin-left: -85px;*/
 }
 
-.grpChooseBlock , .timeChooseBlock{
-	margin: 30px; 
+.grpChooseBlock{
+	margin: 10px 30px 10px 30px; 
 }
 
-/*.grpChoose input{
-	margin: 0px 15px 10px 10px;
-}*/
+.grpChooseBlock:before {
+	content: "参与组别";
+	display: inline;
+	position: absolute;
+	margin: 5px;
+}
+
 .grpChoose{
-	margin-right: 90px;
-
+	margin-left: 110px;
+	display: block;
 }
+
 .grpChoose > span {
 	display: inline-block;
 	width: 120px;
 	margin: 5px;
 }
 
-/*.timeChooseBlock{
-	margin-top: 80px;
-	position: relative;
-}*/
-
-/*.timeChooseBlock:before {
-	content: "时间区间";
-	display: block;
-	margin-bottom: 5px; 
-}
-
-.grpTimeChoose{
-	float: left;
-	display: inline;
-}
-
-.inputTime2:before{
-	content: "—";
-	position:absolute;
-	top: 0px;
-	left: 300px;
-}
-
-.inputTime1,.inputTime2{
-	padding-bottom: -10px;
-	margin-left: 20px;
-}*/
-
-.timeChooseBlock:before{
+/*.timeChooseBlock:before{
 	content: "时间区间";
 }
-.grpTimeChoose {
+*/
+
+.timeChooseBlock{
+	margin: 10px 30px 10px 30px; 
+}
+
+
+.grpTimeChoose1, .grpTimeChoose2 {
 	display: inline-block;
+	height: 35px;
+	margin-right: 35px;
 }
+
+.timeChooseBlock:before {
+	content: "时间区间";
+	display: inline;
+	position: absolute;
+	margin: 5px;
+}
+
+.grpTimeChoose1 {
+	margin-left: 110px;
+}
+
 .inputTime1 , .inputTime2 {
 	width: 150px;
-	margin: 30px;
+	/*margin: 30px;*/
 }
 
-
 .timeKeyWords {
-	position: relative;
-	margin: 30px;
+	margin: 10px 30px 10px 30px;
+}
+
+.timeKeyWords > input {
+	margin-left: 110px;
+	width: 374px;
+}
+.timeKeyWords:before{
+	content: "关键字";
+	display: inline;
+	position: absolute;
+	margin: 5px;
 }
 
 .searchBtn{
