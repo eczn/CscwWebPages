@@ -17,7 +17,7 @@
 </head>
 <body>
 <!-- <audio src="http://sc.111ttt.com/up/mp3/241318/FC627CE202A0EE3E36CD90F39BB6D14D.mp3" autoplay="autoplay">fuck the exploer which not support html5</audio> -->
-	<canvas id='JPC' style='position: absolute;z-index: 99;' width="1" height="1"></canvas>
+	<canvas id='JPC' style='position: fixed;z-index: 99;' width="1" height="1"></canvas>
 	<div id="memu"><!-- this is memu and its css style is written in nav.css -->
 		<!-- btn-target里面的内容对应下面的a标签里面的id（实现功能拓展） -->
 		<div class="memu-item" btn-target="home"><p>首页</p></div>
@@ -369,7 +369,7 @@
 							<p>.项目名称</p>
 							<p>.项目名称</p>
 						</div>
-					</div>					
+					</div>
 				</div>
 			</div>
 			<div class="right-body col-md-3 col-sm-3 col-xs-3">
@@ -402,6 +402,16 @@
 		<div class="animate-back-right"></div>
  -->
 		<div class="tree-container">
+			<div class="project-detail" style="color: #ffb930;">
+				<div class="hidden-xs hidden-sm">BACK</div>
+				<div class="title"></div>
+				<div class="time">2016-08-08</div>
+				<ul>
+					<li>前端组</li>
+					<li>Java组</li>
+				</ul>
+			</div>
+
 			<div id="search_circle"><img src="images/search_circle.png" alt="click and search">
 				<!-- 占位用的triggerBtn -->
 				<div id="triggerBtn"></div>
@@ -460,7 +470,7 @@
 				</div>
 			</div>
 
-			<div></div>
+			<!-- <div></div> -->
 
 			<div class="tree-leaf">
 				<div class="line"></div>
@@ -494,6 +504,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="tree-leaf">
 				<div class="tree-item">
 					<canvas class="canvas-line"></canvas>

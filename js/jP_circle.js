@@ -101,9 +101,49 @@ function pageAnimation(domCanvasId){
 		}
 	}
 
+	var width_1_height = width / height;
+	function rectAnimation(x0,y0,w,h,v){
+		// g.clearRect(0,0,width,height);
+		var imgTemp,i; 
+
+		g.beginPath();
+		g.lineWidth = 5;
+		g.strokeStyle = "#ffb930";
+		g.rect(x0,y0,w,h);
+		g.stroke();
+		g.closePath();
+
+		imgTemp = g.getImageData(0,0,width,height); 
+		for(i=0; i<imgTemp.data.length ; i+=4 ){
+			imgTemp.data[i+3] /= v;
+		}
+		g.putImageData(imgTemp,0,0);
+
+		// x0*=1-v;
+		// y0*=(1-v) / width_1_height;
+		// w+=2*v;
+		// h+=2*v / width_1_height; 
+		// x0 -= 32; 
+		// y0 -= 32/width_1_height; 
+		// w+=64;
+		// h+=64/width_1_height;
+		if ((x0<=-8 && y0<=-8) && (w>=width-8 && h>=height-8)){
+			// alert("clear!");
+			// g.clearRect(0,0,width,height);
+			$(domCanvas).css("display","none");
+			
+			return;
+		}
+
+		window.requestAnimationFrame(function(){
+			rectAnimation(x0/1.1 - 4,(y0/1.1) - 2,w*1.1 + 4,h*1.1 + 4,v+0.4);
+		}); 
+	}
+
 	this.domCanvas = domCanvas;
 	this.circleS = circleS;
 	this.sayK = sayK;
 	this.setFillStyle = setFillStyle;
 	this.clearCanvas = clearCanvas;
+	this.rectAnimation = rectAnimation; 
 }

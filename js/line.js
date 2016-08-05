@@ -61,13 +61,31 @@ function timelineInit(){
 	$(".tree-item").mouseenter(function(){
 		$(this).find(".title").css("color","#ffb930");
 
-		console.log($(this).find('canvas'));
+		// console.log($(this).find('canvas'));
 		pen.render("#ffb930",($(this).find('canvas'))[0]);
 	});
 	$(".tree-item").mouseleave(function(){
 		$(this).find(".title").css("color","#7fedec");
 		pen.render();
 	});
+
+	// $(".title").click(function(){
+	// 	$(".tree-item").trigger("click");
+	// 	return false; 
+	// });
+
+	$(".tree-item").click(function(e){
+		var temp = new pageAnimation('JPC');
+		$("#JPC").css("display","block");
+		temp.rectAnimation(e.clientX-e.offsetX,e.clientY - e.offsetY ,390,150,2);
+		// $(this).animate({
+		// 	width : "100%",
+		// 	height: "100%",
+		// 	top: "0",
+		// 	left: "0"
+		// },800);
+	})
+
 }
 
 function searchInit(search){
@@ -91,6 +109,11 @@ function searchInit(search){
 
 	// 被电击的时候的函数
 	function click(){
+		if ($search.is(":animated")){
+			console.log("now animating!!: 'search pushing'"); 
+			return false; 
+		}
+
 		var width_calced = refresh();
 		// var width_calced = $search.css("width"); 
 		// alert($search.css("width"));
