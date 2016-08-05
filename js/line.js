@@ -96,8 +96,11 @@ function searchInit(search){
 		// alert($search.css("width"));
 		if (status == 0){
 			status = 1; 
-			$search.css("opacity","1");
 			$search.css("width","0");
+			$search.css("display","block");
+			$search.css("opacity","1");
+			
+
 			$search.animate({
 				width: width_calced+'px'
 			},600,function(){
@@ -112,6 +115,7 @@ function searchInit(search){
 				opacity: '0'
 			},600,function(){
 				$(this).css("width","0");
+				$search.css("display","none");
 			});
 		}
 	}

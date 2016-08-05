@@ -52,7 +52,7 @@
 	height: 150px;
 	border: 5px solid #7fedec;
 	position: absolute;
-	z-index: -1;
+	z-index: 4;
 }
 .tree-item:hover {
 	border: 5px solid #ffb930;
