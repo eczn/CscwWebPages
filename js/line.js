@@ -96,15 +96,15 @@ function searchInit(search){
 		// alert($search.css("width"));
 		if (status == 0){
 			status = 1; 
-			$search.css("width","0");
-			$search.css("display","block");
-			$search.css("opacity","1");
-			
+			// $search.css("width","0");
+			// $search.css("display","block");
+			// $search.css("opacity","1");
+			// $search.css("left","-630px"); 
 
 			$search.animate({
-				width: width_calced+'px'
+				left: '0'
 			},600,function(){
-				$search.find("*").fadeTo(800,1);
+				
 			});
 
 		} else if (status == 1) {
@@ -112,10 +112,10 @@ function searchInit(search){
 
 			$search.animate({
 				// webkitFilter: "blur(10px)",
-				opacity: '0'
+				left: '-'+width_calced+'px'
 			},600,function(){
-				$(this).css("width","0");
-				$search.css("display","none");
+				
+				// $search.css("display","none");
 			});
 		}
 	}
