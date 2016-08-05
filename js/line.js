@@ -93,14 +93,13 @@ function timelineInit(){
 		}
 		console.log(e.clientX);
 
-		
 		// $(this).animate({
 		// 	width : "100%",
 		// 	height: "100%",
 		// 	top: "0",
 		// 	left: "0"
 		// },800);
-	})
+	});
 
 }
 
@@ -162,4 +161,3 @@ function searchInit(search){
 	this.refresh = refresh;
 	this.click = click;
 }
-

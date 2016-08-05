@@ -273,8 +273,8 @@
 	position: fixed;
 	height: 100%;
 	width: 100%;
-	z-index: 12;
-	padding-top: 150px;
+	z-index: 460;
+	padding-top: 50px;
 	top: 0%;
 	left: 0;
 	opacity: 0;
@@ -295,7 +295,7 @@
 	font-weight: bold;
 	color: white;
 	/*line-height: 1.7em;*/
-	/*text-align: center;*/
+	text-align: center;
 	background-color: #ffb930; /*蓝色*/
 	cursor: pointer;
 	/*display: none;*/
