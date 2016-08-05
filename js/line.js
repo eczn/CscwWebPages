@@ -106,12 +106,11 @@ function searchInit(search){
 			status = 0; 
 
 			$search.animate({
+				// webkitFilter: "blur(10px)",
 				opacity: '0'
 			},600,function(){
 				$(this).css("width","0");
 			});
-
-
 		}
 	}
 
