@@ -146,13 +146,12 @@
 	.tree-leaf:nth-child(even) .tree-item{
 		right: 0;
 	}
-
 }
 
 @media screen and (max-width: 425px) {
 	.tree-container {
 		margin: 0 auto;
-		width: 320px;
+		width: 280px;
 		position: relative;
 		/*height: 1000px;*/
 	}
@@ -211,7 +210,10 @@
 		left: 110px;
 	}
 
-
+/*	.project-detail {
+		padding: 20px;
+		
+	}*/
 }
 
 /*************   Animating Structure   **************/
@@ -270,7 +272,8 @@
 }
 
 .project-detail {
-	position: fixed;
+	position: absolute;
+	
 	height: 100%;
 	width: 100%;
 	z-index: 460;
@@ -281,6 +284,7 @@
 	display: none;
 	color: #ffb930;
 	background-color: #313131;
+	word-wrap: break-word;
 /*
 	display: none; 
 	opacity: 0; 
@@ -303,6 +307,8 @@
 .timelineBack:hover {
 	color: #313131;
 }
+
+
 
 .project-detail-title {
 	font-size: 36px;

@@ -21,7 +21,7 @@
  *      temp.circleS(e.pageX,e.pageY,'rgba(255,255,255,1)',0,17,temp.sayK(e.pageX,e.pageY),6);
  */
 
-
+"use strict"; 
 function pageAnimation(domCanvasId){
 	var domCanvas = window.document.getElementById(domCanvasId);
 	domCanvas.width =  parseInt(window.innerWidth);
