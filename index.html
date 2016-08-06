@@ -417,7 +417,7 @@
 				</div>
 			</div>
 
-			<div id="search_circle"><img class="search-btn-img" src="images/search_circle.png" alt="click and search">
+			<div id="search_circle"><img src="images/search_circle.png" alt="click and search">
 				<!-- 占位用的triggerBtn -->
 				<div id="triggerBtn"></div>
 				
@@ -581,10 +581,6 @@
 
 			var mySearch = new searchInit('.search',"triggerBtn"); 
 			$("#triggerBtn, #search_circle img").click(mySearch.click).mouseenter(mySearch.btnEnter).mouseleave(mySearch.btnLeave);
-			// search-btn-img
-
-			
-			
 			
 			// 监听click事件
 			$(".grpblock").click(function(e){
