@@ -103,11 +103,23 @@ function timelineInit(){
 
 }
 
-function searchInit(search){
+function searchInit(search,triggerBtn){
 	// 私有变量
 	var status = 0; 
-	var $search = $(search); 
-	
+	// var hover_status = 0; 
+	var $search = $(search) || $("#"+search) || $("."+search);
+	var $trigger = $(triggerBtn) || $("#"+triggerBtn) || $("."+triggerBtn); 
+
+	// console.log($trigger);
+	function btnEnter(){
+		$("#triggerBtn").css("background-color","#ffb930");
+		console.log(this);
+	}
+	function btnLeave(){
+		console.log(this);
+		$("#triggerBtn").css("background-color","#7fedec");	
+	}
+
 	// 获取期望的width宽度 
 	function refresh(){
 		var widthSearchNeed; 
@@ -122,7 +134,7 @@ function searchInit(search){
 		return widthSearchNeed;
 	}
 
-	// 被电击的时候的函数
+	// 被点击的时候的函数
 	function click(){
 		if ($search.is(":animated")){
 			console.log("now animating!!: 'search pushing'"); 
@@ -160,4 +172,6 @@ function searchInit(search){
 
 	this.refresh = refresh;
 	this.click = click;
+	this.btnEnter = btnEnter; 
+	this.btnLeave = btnLeave;
 }

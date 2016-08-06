@@ -19,24 +19,29 @@ body,html{
 }
 .homeContainer,.introducedContainer,.projectContainer,.connectContainer{
 	position: absolute;
+	display: none; 
 	width: 100%;
 	min-height: 700px;
 	top: 130px;
 }
 .homeContainer{
 	left: 0%;
+	display: block;
 	/*overflow-x: hidden;*/
 }
 .introducedContainer{
 	left: 100%;
+	display: block;
 	/*overflow-x: hidden;*/
 }
 .projectContainer{
 	left: 100%;
+	/*display: none;*/
 	/*overflow-x: hidden;*/
 }
 .connectContainer{
 	left: 100%;
+	/*display: none;*/
 	/*overflow-x: hidden;*/
 }
 .header{
@@ -61,6 +66,7 @@ body,html{
 	position: absolute;
 	left: 10%;
 	top: 10%;
+
 }
 
 img[alt="logo-black"]{
