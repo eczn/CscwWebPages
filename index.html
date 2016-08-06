@@ -406,9 +406,10 @@
 			<div class="project-detail">
 				<div class="tree-container">
 					<div id="project-detail-back" class="timelineBack" class="hidden-xs hidden-sm">BACK</div>
-					<div class="detail-title"><h1>>CscwPage</h1></div>
-					<div style="display: inline;">by 前端组, java组</div>
-					<div style="display: inline;"><b>2016-08-08</b></div>
+					<div class="project-detail-title">>CscwPage</div>
+					<div class="project-detail-grp">by <span>前端组</span>,<span>java组</span></div>
+					<div class="project-detail-time"><b>2016-08-08</b></div>
+					<div class="project-detail-intro"><p>历时一周前端后台倾力打造：A State Of CscwPage</p></div>
 <!-- 					<ul>
 						<li>前端组</li>
 						<li>Java组</li>
@@ -578,7 +579,7 @@
 			timelineInit();
 			
 			var mySearch = new searchInit('.search'); 
-			$("#triggerBtn, #search_circle img").click(mySearch.click); 
+			$("#triggerBtn, #search_circle img").click(mySearch.click);
 			
 			// 监听click事件
 			$(".grpblock").click(function(e){
