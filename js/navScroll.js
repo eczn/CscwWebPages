@@ -17,7 +17,7 @@ function scroll(){
 			$("#logo-white").removeClass("hidden");
 			$("#logo-black").css("visibility","hidden");
 			$("#nav a").css("color","#FFF");
-			$("#header").css("z-index",5);
+			$("#header").css("z-index",450);
 		}
 		var height = $("#header").height();
 		$("#homeContainer,#introducedContainer,#projectContainer,#connectContainer").css("top",height);
