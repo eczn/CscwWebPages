@@ -19,6 +19,7 @@ body,html{
 }
 .homeContainer,.introducedContainer,.projectContainer,.connectContainer{
 	position: absolute;
+	display: none; 
 	width: 100%;
 	min-height: 700px;
 	top: 130px;
@@ -30,17 +31,17 @@ body,html{
 }
 .introducedContainer{
 	left: 100%;
-	display: none;
+	display: block;
 	/*overflow-x: hidden;*/
 }
 .projectContainer{
 	left: 100%;
-	display: none;
+	/*display: none;*/
 	/*overflow-x: hidden;*/
 }
 .connectContainer{
 	left: 100%;
-	display: none;
+	/*display: none;*/
 	/*overflow-x: hidden;*/
 }
 .header{

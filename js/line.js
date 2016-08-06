@@ -122,7 +122,7 @@ function searchInit(search){
 		return widthSearchNeed;
 	}
 
-	// 被电击的时候的函数
+	// 被点击的时候的函数
 	function click(){
 		if ($search.is(":animated")){
 			console.log("now animating!!: 'search pushing'"); 
