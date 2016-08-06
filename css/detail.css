@@ -103,12 +103,15 @@
 	text-align: center;
 	background-color: #7fcdec; /*蓝色*/ 
 }
-.year-number[year="2016"]{
+/*.year-number[year="2016"]{
 	background-color: #ffb930; 
-}
+}*/
 .year-number:hover{
 	background-color: #ffb930; /*橙色*/
 	cursor: pointer;
+}
+.year-number-hover{
+	background-color: #ffb930; /*橙色*/
 }
 .all-content{
 	width: 100%;
@@ -175,13 +178,115 @@
     transform: translate3d(0, -100%, 0);
   }
 }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 300%, 0);
+    transform: translate3d(0, 300%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 250%, 0);
+    transform: translate3d(0, 250%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+@keyframes fadeOutDownA {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 200%, 0);
+    transform: translate3d(0, 200%, 0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+.fadeOutDown {
+	animation-name: fadeOutDown;
+	-webkit-animation-name: fadeOutDown;
+	-moz-animation-name: fadeOutDown;
+	-o-animation-name: fadeOutDown;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.fadeOutDownA{
+	animation-name: fadeOutDownA;
+	-webkit-animation-name: fadeOutDownA;
+	-moz-animation-name: fadeOutDownA;
+	-o-animation-name: fadeOutDownA;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.fadeInUp {
+	animation-name: fadeInUp;
+	-webkit-animation-name: fadeInUp;
+	-moz-animation-name: fadeInUp;
+	-o-animation-name: fadeInUp;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.fadeInUp1 {
+	animation-name: fadeInUpBig;
+	-webkit-animation-name: fadeInUpBig;
+	-moz-animation-name: fadeInUpBig;
+	-o-animation-name: fadeInUpBig;
+	-webkit-animation-duration: 1.1s;
+	animation-duration: 1.1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
 .fadeOutUp {
 	animation-name: fadeOutUp;
 	-webkit-animation-name: fadeOutUp;
 	-moz-animation-name: fadeOutUp;
 	-o-animation-name: fadeOutUp;
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+
+}
+
+.fadeOutUp1 {
+	animation-name: fadeOutUp;
+	-webkit-animation-name: fadeOutUp;
+	-moz-animation-name: fadeOutUp;
+	-o-animation-name: fadeOutUp;
+	-webkit-animation-duration: 0.8s;
+	animation-duration: 0.8s;
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 
@@ -251,6 +356,9 @@
 	#detail-wrap{
 		margin-top: -42px;
 	}
+	.view-window{
+		min-height: 700px;
+	}
 	.content{
 		padding-top: 20px;
 	}
@@ -271,6 +379,9 @@
 @media screen and (max-width:768px){
 	#detail-wrap{
 		margin-top: -37px;
+	}
+	.view-window{
+		min-height: 800px;
 	}
 	.left-body{
 		padding-left: 0;
