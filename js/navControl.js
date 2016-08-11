@@ -61,7 +61,7 @@ function navInit(){
 		},1000);
 
 		if (preview_active_name=="home") {
-			$(".border,.mainIntro,.intromore").animate({"margin-top":"+=70px","opacity":0});
+			$(".border,.uc1,.uc2,.blue,.blue2,.intromore").animate({"opacity":0});
 			$(".yellow").animate({"opacity":"0"});
 		}
 
